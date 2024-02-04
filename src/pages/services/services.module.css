@@ -1,0 +1,102 @@
+
+.mainCont{
+    
+    /* background-color: aqua; */
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 90%;
+    overflow: hidden;
+}
+.letras{
+    background-color: rgba(100, 100, 100, 0.085);
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+
+
+.titulo{
+    text-transform: uppercase;
+    color: #FEDB97;
+    font-family: Georgia, serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.subTitulo{
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size:large;
+}
+
+.texto{
+    color:white;
+    
+}
+/* 
+.services{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    background-color: blueviolet;
+    overflow-x:hidden;
+    flex-direction: row;
+} */
+
+.Cartas{
+    /* margin: 20px; */
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+hr{
+    border: 1px solid black;
+    opacity: 1 !important;
+    color: black;
+}
+
+.titulos{
+    font-size: x-small;
+    text-transform: capitalize;
+    color: white;
+    margin-left: auto;
+    
+
+}
+
+.imagen{
+    /* background-color: aqua; */
+    width: 600px;
+    height: 600px;
+}
+
+.contCartas{
+    margin: 20px;
+    width: 500px;
+    background-color: rgba(100, 100, 100, 0.085);
+    color: white;
+    display: grid;
+    grid-auto-rows:auto;
+    display: table;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+@media all and (max-width: 700px){
+    .letras{
+        width: 100%;
+    }
+}

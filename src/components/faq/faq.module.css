@@ -1,0 +1,52 @@
+.letras{
+    z-index:1;
+    background-color: transparent;
+    align-items: center;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    
+}
+
+.titulo{
+    text-transform: uppercase;
+    color: #FEDB97;
+}
+
+.texto{
+    color:white;
+    font-family: Copperplate;
+    margin-bottom: 40px;
+}
+
+
+.contPreguntas{
+    display: flex;
+    /* background-color: aqua; */
+    /* height: 100%; */
+
+}
+
+.contAccordion{
+    width: 97%;
+    /* background-color: aqua !important; */
+}
+
+.preguntas{
+    /* background-color: blue; */
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+
+.accordionItem{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.accordionItemHeader{
+    background-color: transparent !important;
+    
+}

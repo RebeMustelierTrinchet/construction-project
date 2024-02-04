@@ -1,0 +1,141 @@
+.mainCont{
+    background-color: rgba(114, 114, 114, 0.778);
+    padding: 40px;
+    display: flex;
+
+}
+
+.contText{
+    width: 20%;
+    
+}
+
+.text{
+    color:white;
+    font-size: small;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.littleCont{
+    width: 35%;
+    margin-left: 20px;
+    text-align: center;
+    /* background-color: aliceblue; */
+}
+
+.ContBoton,
+.contBoton{
+    display: flex;
+    text-align: center !important;
+    /* background-color: bisque ; */
+    justify-content: center;
+}
+
+.ContBoton{
+    justify-content: start !important;
+}
+
+.boton{
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 45px;
+    height: 45px;
+    font-size:large;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid #FEDB97 ;
+    color:#FEDB97;
+    margin-bottom: 19px;
+    background-color: transparent;
+    transition: 0.8s;
+}
+
+.Boton,
+.botonNav{
+    background-color: #FEDB97 !important;
+    border: 3px solid #FEDB97 !important;
+    transition: 0.8s !important;
+    color:black !important;
+    font-family: Georgia, serif !important;
+
+}
+
+.botonNav{
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+.Boton:hover,
+.botonNav:hover{
+    background-color: transparent !important;
+    color: #FEDB97 !important;
+    border: 3px solid #FEDB97;
+
+}
+
+.contUs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+}
+
+.texto{
+    color:white;
+    font-size: large;
+}
+
+.boton:hover{
+    background-color: #FEDB97;
+    color: white;
+    border: 3px solid #FEDB97;
+}
+
+.iconos{
+    color: #FEDB97;
+    font-size: x-large;
+    margin-right: 10px;
+}
+
+.phone_number{
+    padding-left: 5px;
+}
+
+@media all and (max-width: 700px){
+    .mainCont{
+        flex-direction: column;
+        /* background-color: aqua; */
+        /* justify-content: flex-start; */
+        padding: 12px;
+    }
+
+    .contText,.text, .littleCont{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ContBoton{
+        flex-direction: column;
+        /* margin-top: 2px; */
+        width: 31%;
+
+        margin-left: 32%;
+
+    }
+    .botonCont{
+        margin-bottom: 8px;
+        /* background-color: blue; */
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .Boton{
+        width: 27%;
+        /* margin-left: 30%; */
+    }
+    .texto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

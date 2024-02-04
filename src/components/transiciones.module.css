@@ -1,0 +1,170 @@
+/* <Button variant="outline-light" data-animation="diagonal" className={styles.Boton}>Contac Us
+                        <span className={styles.borderTop} id="border"></span>
+                        <span className={styles.borderRight} id="border"></span>
+                        <span className={styles.borderBottom} id="border"></span>
+                        <span className={styles.borderLeft} id="border"></span>
+                    </Button> */
+:root{
+--dorado: #FEDB97;
+--transition-duration: 0.5s;
+--transition-delay: 0;
+}
+
+.Boton{
+    /* background-color: aquamarine !important; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    background-color: transparent !important;
+    width: 125px;
+    color: var(--dorado) !important;
+    /* text-align: center; */
+    border: 0px solid transparent !important;
+    /* margin-bottom: 60px; */
+    position: relative !important;
+    /* border-block-end-width: 5px ; */
+}
+
+.Boton:hover{
+background-color: transparent !important;
+color: white !important;
+
+}
+
+/* animacion boton */
+.borderTop,
+.borderBottom {
+width: 100%;
+height: 1px;
+/* background-color: #FEDB97; */
+/* background-color: aliceblue; */
+transform: scaleX(0);
+}
+
+.borderLeft,
+.borderRight {
+width: 1px;
+height: 100%;
+transform: scaleY(0);
+}
+.borderTop,
+.borderLeft {
+top: 0;
+/* background-color: blue !important; */
+}
+.borderBottom{
+bottom: 0;
+
+transform-origin: bottom right;
+
+}
+
+.borderTop {
+transform-origin: top left;
+}
+.borderLeft {
+transform-origin: bottom left;
+}
+.borderRight {
+left: auto;
+right: 0;
+transform-origin: top right;
+
+}
+
+
+.borderRight{
+position: absolute;
+right: 0;
+top: 0;
+background: currentColor;
+
+transition: transform var(--transition-duration) ease-in-out;
+}
+
+.Boton,
+.borderLeft,
+.borderTop,
+.borderBottom{
+position: absolute;
+left: 0;
+background: currentColor;
+transition: transform var(--transition-duration) ease-in-out;
+}
+.Boton:hover .borderTop,
+.Boton:hover .borderBottom {
+transform: scaleX(1);
+}
+.Boton:hover .borderLeft,
+.Boton:hover .borderRight {
+transform: scaleY(1);
+}
+.Boton:hover .borderRight {
+transition-delay: var(--transition-delay);
+}
+.Boton:hover .borderBottom {
+transition-delay: calc(var(--transition-delay) * 2);
+}
+.Boton:hover .borderLeft {
+transition-delay: calc(var(--transition-delay) * 3);
+}
+
+.Boton[data-animation="diagonal"] .borderLeft {
+transform-origin:top left;
+/* background-color: aliceblue !important; */
+}
+.Boton[data-animation="diagonal"] .borderRight,
+.Boton[data-animation="diagonal"] .borderBottom {
+transform-origin: bottom right;
+}
+.Boton[data-animation="diagonal"] .Boton:hover [id=border]{
+transition-delay: 0s;
+}
+
+@media all and (max-width: 700px){
+
+}
+
+/* letras */
+/* <div className={styles.letras}>
+                <h1 className={styles.titulo}>{'< What we do >'}</h1>
+                <h2 className={styles.subTitulo}>Home renovations:</h2>
+                <p className={styles.texto}> Transform your space with renovations.
+                    Update your kitchen, bathroom, or living room. Personalize your 
+                    home according to your tastes and needs. Whether it's small changes 
+                    or a complete renovation, create the home of your dreams.</p>
+            </div> */
+
+.letras{
+    background-color: rgba(100, 100, 100, 0.085);
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+
+
+.titulo{
+    text-transform: uppercase;
+    color: #FEDB97;
+    font-family: Georgia, serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.subTitulo{
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size:large;
+}
+
+.texto{
+    color:white;
+}

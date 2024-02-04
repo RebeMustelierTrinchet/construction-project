@@ -1,0 +1,167 @@
+:root {
+    --swiper-theme-color: #FEDB97 !important;
+}
+
+
+
+#app { width: 60% }
+html,
+body {
+  position: relative;
+  width: 100%;
+  background: transparent !important;
+
+}
+
+body {
+  background: transparent !important;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  /* background-color: rgba(100, 100, 100, 0.085); */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiperSlide {
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.658);
+  border: 2px solid #FEDB97;
+  overflow: hidden !important;
+  float: left;
+  position: relative;
+  box-shadow: 1px 1px 2px #e6e6e6;
+    opacity: 1;
+  width: 300px;
+  height: 300px;
+  /* transition: 15s ease-in-out;  */
+}
+
+.imagen{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    transition: all 0.2s linear;
+    
+}
+
+
+/* cartas */
+
+/* img{
+    display: block;
+    position: relative;
+    transition: all 0.2s linear;
+} */
+
+.titulos{
+    font-size: x-small;
+    text-transform: capitalize;
+    /* color: white; */
+    margin-left: auto;
+    color: white !important;
+    
+
+}
+
+.text{
+    color:white !important;
+    z-index: 1;
+    transform: translateY(100px);
+    opacity: 1.5 !important;
+	transition: all 0.2s linear;
+    position: relative;
+    
+}
+
+.Cartas{
+    background-color: rgba(163, 163, 163, 0.937) !important;
+    font-size: medium;
+    /* margin-top: 30px; */
+    width: 300px;
+    position: absolute;
+    /* overflow: hidden; */
+    top: 0;
+    left: 0;
+    height: 300px;
+    /* transition: opacity 15s ease-in-out;  */
+    opacity: 0;
+    /* background-color: rgba(219,127,8, 0.7);  */
+    transition: all 0.4s ease-in-out;
+}
+
+.espacio{
+    text-transform: uppercase;
+    color: #FEDB97 !important;
+    font-family: Georgia, serif;
+    font-size: medium;
+    /* margin-top: 30px; */
+    position: relative;
+    transform: translateY(-400px);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.cabeza{
+    /* display: none; */
+    /* transition: 15s ease-in-out; 
+    background-color: #d31111; */
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    
+
+}
+
+.swiperSlide:hover img{
+    transform: scale(1.1);
+    opacity: 0.50 !important;
+}
+
+.swiperSlide:hover .Cartas{ 
+	opacity: 1 !important;
+}
+
+.swiperSlide:hover .espacio,
+.swiperSlide:hover .boton,
+.swiperSlide:hover .text{
+    opacity: 1.5 !important;
+    transform: translateY(-250px);
+    transition-delay: 0.1s;
+}
+
+.swiperSlide:hover .text .espacio{
+    opacity: 2.5 !important;
+}
+
+.botonCont{
+    width: 130px;
+    height: 30px;
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    /* background-color: aliceblue; */
+    z-index: 1;
+    margin-bottom: 50px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #FEDB97 !important;
+}
+
+.link{
+    text-decoration: none !important;
+}
+
+
+/*  */

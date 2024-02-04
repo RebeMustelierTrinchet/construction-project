@@ -1,0 +1,46 @@
+:root{
+    --bs-nav-link-color: white !important;
+}
+
+.mainCont{
+    width: 109%;
+    margin-left: -4.5%;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.navegador{
+    /* background-color: aqua; */
+    text-align: center;
+    justify-content: center;
+
+}
+
+.conteiner{
+    /* background-color: brown; */
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.contNav{
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.nav{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.nav{
+    color: blanchedalmond !important;
+}

@@ -1,3 +1,8 @@
+:root{
+  --bs-border-color: #FEDB97 !important;
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #fff!important;
+  background-color: transparent !important;
+  border-color: #FEDB97 !important;
+  --bs-nav-tabs-border-color: var(--bs-border-color) !important
+}
+
+.nav-tabs :hover, .nav-link, .nav-link:hover{
+  color: #FEDB97 !important
+}
+
+.accordion-button{
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.accordion-button:focus{
+  /* background-color: blue !important; */
+  /* border: 2px solid green !important; */
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.accordion{
+  --bs-accordion-btn-active-icon: url('./imagenes/signoMenos.png') !important;
+  --bs-accordion-btn-icon: url('./imagenes/signoMas.png') !important;
+}
+
+/* swiper */
+.swiper-button-next, .swiper-rtl ,.swiper-button-prev, .swiper-pagination-fraction {
+  display: none !important;
 }

@@ -1,0 +1,147 @@
+td {
+    padding: 0px 10px;
+}
+
+table{
+    margin-top: 7%;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+
+.bookOnlineDiv{
+    margin-bottom: 100px;
+}
+
+.bookOnlineDivWrapper{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forms,
+.formsM{
+    width: 750px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-color: black;
+}
+
+.formsM{
+    height: 200px;
+}
+
+.formsLabel{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: start;
+    text-transform: uppercase;
+    color: #FEDB97;
+    
+}
+
+
+
+.formsDiv{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 750px;
+    justify-content: space-between;
+}
+
+.formsTimeDiv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.formsItem{
+    width: 200px;
+    height: 40px;
+    border-width: 2px;
+    border-color: black;
+}
+
+.formsSubDiv{
+    height: 40px;
+}
+
+.formsItem1{
+    width: 80%;
+    height: 40px;
+    margin-left: 0 ;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+
+}
+
+.alerta{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(238, 248, 208, 0.977);
+}
+
+.alertText{
+    font-size: 17px;
+}
+
+.button{
+    width: 150px;
+}
+
+.title{
+    text-transform: uppercase;
+    color: #FEDB97;
+}
+
+.contButton{
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: end !important; */
+    margin-top: 10px;
+    /* margin: auto; */
+}
+
+
+@media all and (max-width: 700px){
+    .bookOnlineDiv{
+        width:100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .table, .bookOnlineDivWrapper{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bookOnlineDivWrapper, .forms, .formsM, .formsDiv{
+        width: 350px;
+    }
+    
+    .formsDiv{
+        flex-direction: column !important;
+    }
+    .formsItem1{
+        margin-left: 0;
+    }
+
+    .formsSubDiv{
+        margin-bottom: 20px;
+    }
+    .formsText1{
+        margin-left: -130px;
+    }
+
+}
