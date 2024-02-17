@@ -106,11 +106,8 @@ table{
 }
 
 .contButton{
-    /* background-color: aqua; */
     display: flex;
-    /* justify-content: end !important; */
     margin-top: 10px;
-    /* margin: auto; */
 }
 
 
@@ -144,4 +141,24 @@ table{
         margin-left: -130px;
     }
 
+    .title{
+        padding-top: 30px;
+    }
+
+    .contButton{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .button__submit{
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        font-size: 1.5rem !important;
+    }
+    .bookOnlineDiv{
+        margin-bottom: -20px !important;
+    }
 }

@@ -24,12 +24,20 @@
     display: flex;
     color: white !important;
     /* background-color: aqua !important; */
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
     margin-left: 15px !important;
     opacity: 1 !important;
     width: 40px;
     height: 40px;
     border: 2px solid transparent;
    
+}
+.button__iconos{
+    /* color: #FEDB97; */
+    margin: auto;
+    font-size: larger;
 }
 
 
@@ -182,3 +190,31 @@
 
 }
 
+.contenedor__imagen__icono{
+    background-color: white;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FEDB97;
+    transition: 1s;
+}
+
+/* .imagen__icono{
+    width: 10px;
+    height: 10px;
+} */
+
+
+.contenedor__imagen__icono:hover,
+.imagen__icono:hover .contenedor__imagen__icono{
+    background-color: #FEDB97;
+    cursor: pointer;
+}
+
+.imagen__icono{
+    width: 50px;
+    height: 50px;
+}

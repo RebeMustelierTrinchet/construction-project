@@ -119,12 +119,19 @@
         /* margin-bottom: 30px; */
         margin-left: auto;
         margin-right: auto;
+        margin-top: 5px !important;
     }
     .contenedorCarrusel{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+    .imageDiv{
+        
+        top: -15px;
+       
+    }
+    
     
     .carousel{
         height: 400px;

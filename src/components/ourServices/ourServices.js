@@ -10,6 +10,12 @@ import 'swiper/css/pagination';
 import styles from './ourServices.module.css'
 import Card from 'react-bootstrap/Card';
 import I1 from './../../imagenes/I1.jpg'
+
+// imagenes
+import ImgKitchen from './../../imagenes/kitchen2/IMG_8833.jpg'
+import ImgBath from './../../imagenes/bath1/IMG_7921.jpg'
+import outSideImg from './../../imagenes/Screenshot 2024-02-07 11333.png'
+
 import Styles from './../../components/transiciones.module.css'
 import { Button } from 'react-bootstrap';
 
@@ -18,40 +24,48 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 import {Link} from "react-router-dom"
 
 export default function OurServices() {
-  const nombreNegocio= 'hello'
+  const nombreNegocio= 'Damarco'
   const Cartas=[
     {
-        imagen: I1,
+        imagen: ImgKitchen,
         titulo: nombreNegocio,
         espacio:"< Kitchen >",
         text: "We build the perfect Kitchen for you, fulfilling your dreams and expectations.",
         boton:"See Kitchen",
         url:"/kitchen"
     },
+    // {
+    //     imagen: I1,
+    //     titulo: nombreNegocio,
+    //     espacio:"< Living Room >",
+    //     text: " We transform your Living Room into a unique and personalized space, where you can enjoy special moments.",
+    //     boton:"See Living Room",
+    //     url:"/livingRoom"
+    // },
+    // {
+    //     imagen: I1,
+    //     titulo: nombreNegocio,
+    //     espacio:"< Bedroom >",
+    //     text: " We make your dream Bedroom come true, adapting to your tastes and needs.",
+    //     boton:"See Bedroom",
+    //     url:"/Bedroom"
+    // },
     {
-        imagen: I1,
-        titulo: nombreNegocio,
-        espacio:"< Living Room >",
-        text: " We transform your Living Room into a unique and personalized space, where you can enjoy special moments.",
-        boton:"See Living Room",
-        url:"/livingRoom"
-    },
-    {
-        imagen: I1,
-        titulo: nombreNegocio,
-        espacio:"< Bedroom >",
-        text: " We make your dream Bedroom come true, adapting to your tastes and needs.",
-        boton:"See Bedroom",
-        url:"/Bedroom"
-    },
-    {
-        imagen: I1,
+        imagen: ImgBath,
         titulo: nombreNegocio,
         espacio:"< Bathroom >",
         text: " No matter the size of your bathroom, we adapt to any space to create a relaxation oasis in your home.",
         boton:"See Bathroom",
         url:"/Bathroom"
     },
+    {
+      imagen: outSideImg,
+      titulo: nombreNegocio,
+      espacio:"< Others >",
+      text: " We renovate the small details of your home to give it a unique and personalized style.",
+      boton:"See Others Projects",
+      url:"/OthersProjects"
+  },
     
 ]
   return (
@@ -76,7 +90,7 @@ export default function OurServices() {
         {Cartas.map((item, index) => {
           return(
             <SwiperSlide className={styles.swiperSlide} key={index} > 
-            <Link to={item.url} className={styles.link} >
+            <Link to={item.ur} className={styles.link} >
                 <div className={styles.contCartas}>
                     <div className={styles.cabeza}>
                         <img src={item.imagen} className={styles.imagen}/>

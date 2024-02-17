@@ -1,0 +1,157 @@
+.imagen__cocina{
+    width: 45%;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+
+.letras__conteneder{
+    background-color: rgba(67, 67, 67, 0.281);
+    width: 60%;
+    margin-left: 20%;
+}
+
+.right__conteneder{
+    /* background-color: aqua; */
+    height: 800px;
+    /* width: 600px; */
+    margin-left: 40px;
+}
+
+.texto{
+    color:white;
+    font-family: Copperplate;
+    margin-bottom: 40px;
+}
+
+.nav__imagen{
+    width: 120px;
+    height: 120px;
+    filter:grayscale(100%)
+}
+
+
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    /* height: 100px !important; */
+    /* background-color: aqua; */
+    /* overflow: scroll; */
+}
+
+.imagen__conteneder{
+    display: flex;
+    margin-bottom: 40px;
+    /* background-color: beige; */
+    overflow:hidden;
+}
+
+/*  */
+
+  
+ 
+  
+  .mySwiper {
+    width: 95%;
+    height: 180px;
+    /* background-color: aqua; */
+    /* padding: 20px; */
+    /* overflow: visible; */
+  }
+  
+  .SwiperSlide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    width: 110px !important;
+    height: 110px !important;
+    margin-top: 50px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  .mySwiper span{
+    background-color: transparent !important;
+  }
+  
+
+  .Tab__imagen{
+    height: 560px;
+  }
+
+
+  .imagen__content{
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: center; */
+    height: 560px;
+    margin-bottom: 25px;
+  }
+
+  .nav__imagen:hover{
+    filter: initial;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+    top:-40px;
+    left: -15px;
+    border: 5px solid var(--dorado);
+  }
+   .navItem{
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent !important;
+    z-index: 10;
+   }
+
+   @media all and (max-width: 700px){
+    .imagen__conteneder{
+      flex-direction: column;
+    }
+    .imagen__cocina{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      
+    }
+    .Tab__imagen{
+      height: auto;
+      width: 130%;
+      margin-left: -50px;
+      /* margin-bottom: 20px; */
+    }
+    .nav__imagen{
+      margin-top: -10px;
+      /* margin-left: 20px; */
+      /* position: relative !important; */
+    }
+    .imagen__content{
+      height: auto;
+    }
+    .right__conteneder{
+      height: auto;
+    }
+    .letras__conteneder{
+      width: 100%;
+      margin-left: 0;
+    }
+   
+   }

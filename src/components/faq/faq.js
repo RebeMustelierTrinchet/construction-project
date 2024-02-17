@@ -21,12 +21,12 @@ const ITEMS = [
       body: "No, We take on total remodeling and renovation projects. In some instances if for example you have a few things you need done ie) Cabinets and Counter/ Island we may take it on just depending on our current work volume at that time. Please contact us and we will kindly let you know if we can be of assistance.",
     },
     {
-      title: "WHERE DO YOU SERVICE?",
+      title: "WHERE DO WE SERVICE?",
       body: "Name Home Remodeling is physically located in Downtown San Jose, CA. We service the entire San Francisco Bay Area.",
     },
     {
       title: "About Us",
-      body: "",
+      body: "For over a decade, our team has been committed to making the dreams and goals of our clients come true in their dream homes. With 14 years of experience, we have perfected our skills and knowledge in the design and construction of spaces that reflect the personality and needs of each client. Our customer-centered approach has allowed us to establish lasting relationships and meet the expectations of those who trust us to make their dreams come true.",
     },
   ];
   

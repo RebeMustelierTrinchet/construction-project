@@ -9,6 +9,7 @@ import { CgMail } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import icono from './../../imagenes/icono.png'
 import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function NavBar(){
@@ -17,15 +18,15 @@ export default function NavBar(){
             <Navbar variant="dark" collapseOnSelect expand="lg"  className={styles.contenedorPrincipal}>
                 <Container className={styles.conteiner}>
                     <Navbar.Brand href="/" >
-                            <div>
-                                ICON
+                            <div className={styles.contenedor__imagen__icono}>
+                                <img src={icono} className={styles.imagen__icono}/>
                             </div>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" >
                         <Nav.Link className={styles.botonNav} href="/">Home<hr className={styles.raya} /></Nav.Link>
-                        <Nav.Link className={styles.botonNavS} href="/portfolio" >Portfolio<hr className={styles.raya} />
+                        <Nav.Link className={styles.botonNav} href="/portfolio" >Portfolio<hr className={styles.raya} />
                             {/* <div className={styles.menu}>
                                 <Button className={styles.BotonB} variant="link">Bathroom</Button>
                                 <Button className={styles.Boton} variant="link">Bedroom</Button>
@@ -34,7 +35,7 @@ export default function NavBar(){
                             </div> */}
                         </Nav.Link>
 
-                        <Nav.Link className={styles.botonNavS} href="/services">Services<hr className={styles.raya} />
+                        <Nav.Link className={styles.botonNav} href="/services">Services<hr className={styles.raya} />
                             {/* <div className={styles.menu}>
                                 <Button className={styles.Boton} variant="link">Bathroom</Button>
                                 <Button className={styles.Boton} variant="link">Bedroom</Button>
@@ -47,10 +48,10 @@ export default function NavBar(){
                 
                         </Nav>
                         <Nav className={styles.contBoton}>
-                        <Nav.Link className={styles.boton} href="/"><FaFacebookF  /></Nav.Link>
-                        <Nav.Link className={styles.boton} href="/"><FaInstagram /></Nav.Link>
-                        <Nav.Link className={styles.boton} href="/"><FaTwitter /></Nav.Link>
-                        <Nav.Link className={styles.boton} href="/"><CgMail /> </Nav.Link>
+                        <Nav.Link className={styles.boton} href="https://www.facebook.com/Damarco.Tx?mibextid=LQQJ4d"><FaFacebookF className={styles.button__iconos} /></Nav.Link>
+                        <Nav.Link className={styles.boton} href="/"><FaInstagram className={styles.button__iconos} /></Nav.Link>
+                        <Nav.Link className={styles.boton} href="/"><FaTwitter className={styles.button__iconos} /></Nav.Link>
+                        <Nav.Link className={styles.boton} href="/"><CgMail className={styles.button__iconos} /> </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

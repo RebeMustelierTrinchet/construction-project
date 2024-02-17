@@ -7,7 +7,7 @@ import Faq from "../../components/faq/faq";
 export default function ContService(){
     return(
         <div>
-            <Carrusel />
+            <Carrusel/>
             <Services />
             <Faq/>
         </div>

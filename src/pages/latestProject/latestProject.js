@@ -1,24 +1,43 @@
 import { Button } from 'react-bootstrap'
 import styles from './latestProject.module.css'
-import React from 'react'
+
 import Styles from './../../components/transiciones.module.css'
+import { getProjects } from '../../api/projects-api'
+import React, { useEffect, useState } from "react";
 
 export default function LatestProject(){
+
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        async function getAllProjects() {
+            await getProjects(setProjects);  
+        }
+  
+      getAllProjects();
+    }, [])
+
     return(
         <div className={styles.mainCont}>
             <h1 className={styles.titulo}>{'< Our Projects >'}</h1>
             <h2 className={styles.subTitulo}>Favorites Projects</h2>
-            <div className={styles.imagenesCont}>
-                <div className={styles.imagenes}>I1</div>
-                <div className={styles.imagenes}>I2</div>
-                <div className={styles.imagenes}>I3</div>
+            <div>
+                {projects && projects.length ?
+                    <div>
+                       {projects.map((project, index) =>{
+                            return(
+                                <div>
+                                    <div>{project.name  ?? ""}</div>
+                                
+                                    <img className={styles.imagen} src={project.imagen_principal ?? ""}/>
+                                </div>
+                            )
+                       })}
+                    </div>
 
-            </div>
-            <div className={styles.imagenesCont}>
-                <div className={styles.imagenes}>I1</div>
-                <div className={styles.imagenes}>I2</div>
-                <div className={styles.imagenes}>I3</div>
-
+                    :<div>En Proceso</div>
+            
+                }
             </div>
             <div className={styles.botonCont}>
                 <Button data-animation="diagonal" className={Styles.Boton} href="/portfolio"> {'<Portafolio>'}

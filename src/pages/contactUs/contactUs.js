@@ -68,7 +68,7 @@ export default function ContacUs() {
                 />
                 
                 <div className={styles.contButton}>
-                    <Button variant="outline-light" data-animation="diagonal" className={Styles.Boton}>{ '< Submit >'}
+                    <Button variant="outline-light" data-animation="diagonal" className={`${Styles.Boton} ${styles.button__submit}`}>{ '< Submit >'}
                         <span className={Styles.borderTop} id="border"></span>
                         <span className={Styles.borderRight} id="border"></span>
                         <span className={Styles.borderBottom} id="border"></span>

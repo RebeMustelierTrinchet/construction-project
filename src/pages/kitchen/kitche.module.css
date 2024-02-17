@@ -11,7 +11,7 @@
     margin-left: 20px;
 
     height: 300px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     transition: 2s;
     overflow: hidden;
 }
@@ -26,17 +26,35 @@
     background-color: rgba(62, 62, 62, 0.805);
     /* position: absolute; */
     /* cambiar al insertar foto */
-    margin-top: 300px;
+    /* margin-top: 300px; */
+    z-index: 100;
 }
 
-.imagenes:hover .nombre{
+.imagenes:hover .nombre,
+.imagen__cocina:hover .nombre{
     transform: translateY(-50px);
     transition: 1s;
 }
 
-.imagenes:hover{
+/* .imagenes:hover, */
+.imagen__cocina:hover{
     cursor: pointer;
+    filter: grayscale(100%);
+    transition: 1s;
     opacity: 0.8;
+}
+.texto{
+    color:white;
+    font-family: Copperplate;
+    /* margin-bottom: 40px; */
+    font-size: large;
+    text-align: center;
+}
+
+.imagen__cocina{
+    background-size: contain;
+    height: 100%;
+    width: 100%;
 }
 
 @media all and (max-width: 700px){
@@ -57,6 +75,6 @@
         padding: 0;
     }
     .nombre{
-        display: none;
+        /* display: none; */
     }
 }

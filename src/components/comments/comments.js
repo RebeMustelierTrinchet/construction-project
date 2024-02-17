@@ -43,7 +43,7 @@ export default function Comments() {
   return (
     <div className={styles.mainCont}>
         <h1 className={styles.titulo}>{'< What do others think >'}</h1>
-        <h2 className={styles.subTitulo}>nombre local</h2>
+        <h2 className={styles.subTitulo}> DAMARCO </h2>
       <Swiper
         // effect={'coverflow'}
         // grabCursor={true}

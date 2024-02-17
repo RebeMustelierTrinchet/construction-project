@@ -2,12 +2,10 @@
     background-color: rgba(114, 114, 114, 0.778);
     padding: 40px;
     display: flex;
-
 }
 
 .contText{
     width: 20%;
-    
 }
 
 .text{
@@ -21,14 +19,12 @@
     width: 35%;
     margin-left: 20px;
     text-align: center;
-    /* background-color: aliceblue; */
 }
 
 .ContBoton,
 .contBoton{
     display: flex;
     text-align: center !important;
-    /* background-color: bisque ; */
     justify-content: center;
 }
 
@@ -37,8 +33,6 @@
 }
 
 .boton{
-    /* margin-left: auto;
-    margin-right: auto; */
     width: 45px;
     height: 45px;
     font-size:large;
@@ -50,7 +44,15 @@
     margin-bottom: 19px;
     background-color: transparent;
     transition: 0.8s;
+    display: flex;
 }
+
+.button__iconos{
+    /* color: #FEDB97; */
+    margin: auto;
+    font-size: larger;
+}
+
 
 .Boton,
 .botonNav{
@@ -103,21 +105,58 @@
     padding-left: 5px;
 }
 
+.contenedor__imagen__icono{
+    background-color: white;
+    width: 113px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FEDB97;
+    margin-right: 40px;
+    transition: 1s;
+}
+
+.contenedor__imagen__icono:hover,
+.imagen__icono:hover .contenedor__imagen__icono{
+    background-color: #FEDB97;
+    cursor: pointer;
+}
+
+.imagen__icono{
+    width: 110px;
+    height: 110px;
+}
+
 @media all and (max-width: 700px){
     .mainCont{
         flex-direction: column;
-        /* background-color: aqua; */
-        /* justify-content: flex-start; */
         padding: 12px;
+        margin-top: 20px;
     }
 
     .contText,.text, .littleCont{
         width: 100%;
         margin-left: 0;
     }
+
+    .contenedor__imagen__icono{
+        /* width: max-content; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .text{
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+    }
+
     .ContBoton{
         flex-direction: column;
-        /* margin-top: 2px; */
         width: 31%;
 
         margin-left: 32%;
@@ -125,16 +164,25 @@
     }
     .botonCont{
         margin-bottom: 8px;
-        /* background-color: blue; */
         width: 100%;
-        justify-content: center;
+        justify-content: start;
         
     }
+
+    .botonNav{
+        width: 100% !important;
+    }
     .Boton{
-        width: 27%;
-        /* margin-left: 30%; */
+        width: 31%;
+        margin-left: 10px !important;
     }
     .texto{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contUs{
+        width: max-content;
         margin-left: auto;
         margin-right: auto;
     }

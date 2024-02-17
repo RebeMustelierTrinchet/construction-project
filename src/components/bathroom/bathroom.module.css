@@ -52,11 +52,14 @@
         height: 400px;
         margin-left: 0;
         margin-bottom: 20px;
+        /* overflow: visible; */
     }
     .mainCont{
         padding: 0;
     }
-    .nombre{
-        display: none;
+    .texto{
+       background-color: aqua;
+      
+       z-index: 10;
     }
 }

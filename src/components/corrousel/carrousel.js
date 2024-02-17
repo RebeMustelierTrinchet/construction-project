@@ -3,9 +3,9 @@ import styles from "./carrousel.module.css"
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import I1 from "./../../imagenes/I1.png"
-import I2 from "./../../imagenes/I2.png"
-import I3 from "./../../imagenes/I3.png"
+import I1 from "./../../imagenes/carrusel-Services/IMG_1934.jpg"
+import I2 from "./../../imagenes/carrusel-Services/IMG_8833.jpg"
+import I3 from "./../../imagenes/carrusel-Services/Screenshot 2024-02-07 113332.png"
 
 
 

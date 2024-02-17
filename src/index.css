@@ -28,6 +28,13 @@ code {
   color: #FEDB97 !important
 }
 
+.nav-pills .nav-link.active, .nav-pills .show .nav-link{
+background-color: transparent !important;
+border: 2px solid #FEDB97 !important;
+border-bottom-width: 0 !important;
+/* color: white !important; */
+}
+
 .accordion-button{
   background-color: transparent !important;
   color: white !important;

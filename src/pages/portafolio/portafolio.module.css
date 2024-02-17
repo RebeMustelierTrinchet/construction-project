@@ -16,6 +16,11 @@
 
 }
 
+.navItem{
+    border-radius: 0px !important;
+    /* background-color: aquamarine; */
+}
+
 .conteiner{
     /* background-color: brown; */
     text-align: center;
@@ -39,8 +44,35 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 30px;
+    /* margin-left: 30px !important; */
+    /* background-color: aqua !important; */
+    /* width: 700px; */
+}
+.flexRow{
+    /* background-color: aquamarine; */
+    justify-content: center;
+    border-bottom: 2px solid #FEDB97;
 }
 
 .nav{
     color: blanchedalmond !important;
 }
+.button__iconos{
+    display: none;
+}
+
+@media all and (max-width: 700px){
+    .flexRow{
+        margin-bottom: 20px;
+    }
+    .buton__nav{
+        display: none;
+    }
+    .button__iconos{
+        display: block;
+        font-size: larger;
+        color: #FEDB97;
+    }
+    
+}
+

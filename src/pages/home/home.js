@@ -1,22 +1,24 @@
 import React from 'react'; 
 import styles from "./home.module.css"
 import Button from 'react-bootstrap/Button';
-import I1 from './../../imagenes/I1.jpg'
+import I1 from './../../imagenes/kitchen2/IMG_8833 - Copy.jpg'
 import I2 from './../../imagenes/I2.jpg'
 import Services from '../services/services';
 import LatestProject from '../latestProject/latestProject';
 import Comments from '../../components/comments/comments';
 import Faq from '../../components/faq/faq';
+import Carrusel from '../../components/corrousel/carrousel';
 
 export default function Home(){
     return(
         <div className={styles.mainConteiner}>
            
             <div className={styles.bigConteiner}>
+                
                 <div className={styles.letras}>
                     <p className={styles.titulo}>{'< Quality Work & Duaraderos >'} </p>
                     <h2 className={styles.texto}>Remodeling, Renovation and High-End Designs For Your Property</h2>
-                    <Button variant="outline-light" data-animation="diagonal" className={styles.Boton}>Contac Us
+                    <Button variant="outline-light" data-animation="diagonal" className={styles.Boton}  href="/contact-us">Contac Us
                         <span className={styles.borderTop} id="border"></span>
                         <span className={styles.borderRight} id="border"></span>
                         <span className={styles.borderBottom} id="border"></span>
@@ -30,6 +32,19 @@ export default function Home(){
                 {/* <img className={styles.imagenDerecha} src={I2}></img> */}
                 </div>
             
+            </div>
+            <div className={styles.cont__vistaMovil}>
+                <Carrusel/>
+                <div className={styles.letras}>
+                    <p className={styles.titulo}>{'< Quality Work & Duaraderos >'} </p>
+                    <h2 className={styles.texto}>Remodeling, Renovation and High-End Designs For Your Property</h2>
+                    <Button variant="outline-light" data-animation="diagonal" className={styles.Boton}  href="/contact-us">Contac Us
+                        <span className={styles.borderTop} id="border"></span>
+                        <span className={styles.borderRight} id="border"></span>
+                        <span className={styles.borderBottom} id="border"></span>
+                        <span className={styles.borderLeft} id="border"></span>
+                    </Button>
+                </div>
             </div>
 
             <div>

@@ -22,7 +22,7 @@ export default function Portafolio(){
             </div> 
             <div className={styles.contNav}>
                 <NavPortafolio/>
-                <Button variant="outline-light" data-animation="diagonal" className={Styles.Boton}>Go Portafolio
+                <Button variant="outline-light" data-animation="diagonal" href="/services" className={Styles.Boton}>Go Services
                     <span className={Styles.borderTop} id="border"></span>
                     <span className={Styles.borderRight} id="border"></span>
                     <span className={Styles.borderBottom} id="border"></span>
