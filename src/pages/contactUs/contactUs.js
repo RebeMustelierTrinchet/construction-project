@@ -3,6 +3,7 @@ import styles from "./contactUs.module.css"
 import { Form, Alert, Button } from "react-bootstrap"
 import { useEffect, useState } from "react";
 import Styles from '../../components/transiciones.module.css'
+import { createMessage } from "../../api/menssage-api";
 
 
 
@@ -11,10 +12,32 @@ export default function ContacUs() {
     const [phone, setPhone] = useState("")
     const [email, setemail] = useState("")
     const [message, setmessage] = useState("")
+    const [apiResult, setApiResult] = useState(null)
+    const [showAlert, setShowAlert] = useState(false)
 
 
    
-    // hi
+    const onSubmit = async (e) => {
+        e.preventDefault()
+        const body = JSON.stringify({
+            name: customer,
+            phone,
+            email,
+            message,
+        })
+        await createMessage(body, setApiResult)
+    }
+
+    useEffect(() => {
+        if (apiResult === "Success") {
+            setCustomer("")
+            setPhone("")
+            setemail("")
+            setmessage("")
+            setApiResult(null)
+            setShowAlert(true)
+        }
+    }, [apiResult])
 
 
 
@@ -22,11 +45,11 @@ export default function ContacUs() {
         <div className={styles.bookOnlineDiv}>
             <div className={styles.bookOnlineDivWrapper}>
 
-                {/* {showAlert ?
+                {showAlert ?
                     <Alert variant="success" onClose={() => setShowAlert(false)} dismissible className={styles.alerta}>
-                        <h1 className={styles.alertText}> Your appointment has been sent for approval </h1>
+                        <h1 className={styles.alertText}> Your menssage has been sent </h1>
                     </Alert> : <></>
-                } */}
+                }
 
                 <h1 className={styles.title}>{'< Contact Us >'}</h1>
 
@@ -68,7 +91,7 @@ export default function ContacUs() {
                 />
                 
                 <div className={styles.contButton}>
-                    <Button variant="outline-light" data-animation="diagonal" className={`${Styles.Boton} ${styles.button__submit}`}>{ '< Submit >'}
+                    <Button variant="outline-light" onClick={(e) => onSubmit(e)} data-animation="diagonal" className={`${Styles.Boton} ${styles.button__submit}`}>{ '< Submit >'}
                         <span className={Styles.borderTop} id="border"></span>
                         <span className={Styles.borderRight} id="border"></span>
                         <span className={Styles.borderBottom} id="border"></span>

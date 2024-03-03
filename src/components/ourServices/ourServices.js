@@ -34,22 +34,6 @@ export default function OurServices() {
         boton:"See Kitchen",
         url:"/kitchen"
     },
-    // {
-    //     imagen: I1,
-    //     titulo: nombreNegocio,
-    //     espacio:"< Living Room >",
-    //     text: " We transform your Living Room into a unique and personalized space, where you can enjoy special moments.",
-    //     boton:"See Living Room",
-    //     url:"/livingRoom"
-    // },
-    // {
-    //     imagen: I1,
-    //     titulo: nombreNegocio,
-    //     espacio:"< Bedroom >",
-    //     text: " We make your dream Bedroom come true, adapting to your tastes and needs.",
-    //     boton:"See Bedroom",
-    //     url:"/Bedroom"
-    // },
     {
         imagen: ImgBath,
         titulo: nombreNegocio,
@@ -101,7 +85,6 @@ export default function OurServices() {
                         <Card.Title className={styles.espacio} href={item.url}>{item.espacio}</Card.Title>
                           <Card.Text className={styles.text}>{item.text}
                           </Card.Text>
-                      {/* <button href={item.url} className={styles.boton}>{item.boton}</button> */}
                       </Card.Body>
                     </Card>
                   </div>  

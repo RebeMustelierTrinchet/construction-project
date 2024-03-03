@@ -21,8 +21,8 @@ const ITEMS = [
       body: "No, We take on total remodeling and renovation projects. In some instances if for example you have a few things you need done ie) Cabinets and Counter/ Island we may take it on just depending on our current work volume at that time. Please contact us and we will kindly let you know if we can be of assistance.",
     },
     {
-      title: "WHERE DO WE SERVICE?",
-      body: "Name Home Remodeling is physically located in Downtown San Jose, CA. We service the entire San Francisco Bay Area.",
+      title: "WHERE DO YOU SERVICE?",
+      body: "DAMARCO is physically located in Downtown San Jose, CA. We service the entire San Francisco Bay Area.",
     },
     {
       title: "About Us",
