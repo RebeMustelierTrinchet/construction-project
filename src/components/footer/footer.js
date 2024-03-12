@@ -22,7 +22,7 @@ export default function Footer(){
             <div className={styles.littleCont}>
                 <div className={styles.contBoton}>
                     <div className={styles.contBoton}>
-                        <button className={styles.boton} href="/"><FaFacebookF  className={styles.button__iconos}  /></button>
+                        <Button className={styles.boton} href="https://www.facebook.com/Damarco.Tx?mibextid=LQQJ4d"><FaFacebookF  className={styles.button__iconos}  /></Button>
                         <button className={styles.boton} href="/"><FaInstagram  className={styles.button__iconos}  /></button>
                         <button className={styles.boton} href="/"><FaTwitter  className={styles.button__iconos} /></button>
                         <button className={styles.boton} href="/"><CgMail  className={styles.button__iconos} /> </button>

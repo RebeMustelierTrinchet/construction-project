@@ -36,7 +36,7 @@ export default function Faq(){
         <div>
             <div className={styles.letras}>
                 <p className={styles.titulo}>{'< F.A.Q >'} </p>
-                <h2 className={styles.texto}>Frequently Asking Questions</h2>
+                <h2 className={styles.texto}>Frequently Asked Questions</h2>
             </div>
             <div className={styles.contPreguntas}>
                 <div className={styles.preguntas}>

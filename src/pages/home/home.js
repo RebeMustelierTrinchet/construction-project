@@ -16,7 +16,7 @@ export default function Home(){
             <div className={styles.bigConteiner}>
                 
                 <div className={styles.letras}>
-                    <p className={styles.titulo}>{'< Quality Work & Duaraderos >'} </p>
+                    <p className={styles.titulo}>{'< Quality Work & Durable >'} </p>
                     <h2 className={styles.texto}>Remodeling, Renovation and High-End Designs For Your Property</h2>
                     <Button variant="outline-light" data-animation="diagonal" className={styles.Boton}  href="/contact-us">Contac Us
                         <span className={styles.borderTop} id="border"></span>
@@ -36,7 +36,7 @@ export default function Home(){
             <div className={styles.cont__vistaMovil}>
                 <Carrusel/>
                 <div className={styles.letras}>
-                    <p className={styles.titulo}>{'< Quality Work & Duaraderos >'} </p>
+                    <p className={styles.titulo}>{'< Quality Work & Durable >'} </p>
                     <h2 className={styles.texto}>Remodeling, Renovation and High-End Designs For Your Property</h2>
                     <Button variant="outline-light" data-animation="diagonal" className={styles.Boton}  href="/contact-us">Contac Us
                         <span className={styles.borderTop} id="border"></span>
