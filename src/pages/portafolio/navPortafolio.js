@@ -51,10 +51,10 @@ export default function NavPortafolio({categories}){
           </Row>
           {/* <hr/> */}
           <Row sm={9}>
-            <Tab.Content>
+            <Tab.Content className={styles.tabItem}>
             {categories.map((cat, index) => {
               return (
-                <Tab.Pane key={index} eventKey={cat.name}><ProjectTabCard items={cat.items} /></Tab.Pane>
+                <Tab.Pane key={index} className={styles.Item} eventKey={cat.name}><ProjectTabCard items={cat.items} /></Tab.Pane>
               )
             })}
             </Tab.Content>

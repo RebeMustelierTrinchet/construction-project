@@ -78,3 +78,22 @@
     
 }
 
+.tabItem{
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+    justify-content:center;
+    
+    
+}
+
+
+.Item{
+    /* height: 300px; */
+    /* width: 320px; */
+    position: relative;
+    display: flex;
+    justify-content:center;
+}

@@ -18,7 +18,7 @@ export default function Footer(){
             <div className={styles.contenedor__imagen__icono}>
                 <img src={icono} className={styles.imagen__icono}/>
             </div>
-            <p className={styles.text}>As an expert in making your dreams come true, I have extensive experience in building custom homes. My goal is to help you create a home that is true to your style and personality.</p>
+            <p className={styles.text}>As an expert in making your dreams come true, we have extensive experience in building custom homes. Our goal is to help you create a home that is true to your style and personality.</p>
             <div className={styles.littleCont}>
                 <div className={styles.contBoton}>
                     <div className={styles.contBoton}>

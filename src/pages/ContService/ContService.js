@@ -9,7 +9,7 @@ export default function ContService(){
         <div>
             <Carrusel/>
             <Services />
-            <Faq/>
+            {/* <Faq/> */}
         </div>
     )
 }
