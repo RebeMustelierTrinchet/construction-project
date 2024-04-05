@@ -27,25 +27,25 @@ export default function OurServices() {
   const nombreNegocio= 'Damarco'
   const Cartas=[
     {
-        imagen: ImgKitchen,
-        titulo: nombreNegocio,
-        espacio:"< Kitchen >",
+        image: ImgKitchen,
+        title: nombreNegocio,
+        room:"< Kitchen >",
         text: "We build the perfect Kitchen for you, fulfilling your dreams and expectations.",
         boton:"See Kitchen",
         url:"/kitchen"
     },
     {
-        imagen: ImgBath,
-        titulo: nombreNegocio,
-        espacio:"< Bathroom >",
+        image: ImgBath,
+        title: nombreNegocio,
+        room:"< Bathroom >",
         text: " No matter the size of your bathroom, we adapt to any space to create a relaxation oasis in your home.",
         boton:"See Bathroom",
         url:"/Bathroom"
     },
     {
-      imagen: outSideImg,
-      titulo: nombreNegocio,
-      espacio:"< Others >",
+      image: outSideImg,
+      title: nombreNegocio,
+      room:"< Others >",
       text: " We renovate the small details of your home to give it a unique and personalized style.",
       boton:"See Others Projects",
       url:"/OthersProjects"
@@ -53,7 +53,7 @@ export default function OurServices() {
     
 ]
   return (
-    <div className={styles.mainCont}>
+    <div className={styles.main__container}>
       
       <Swiper
         effect={'coverflow'}
@@ -73,16 +73,16 @@ export default function OurServices() {
       >
         {Cartas.map((item, index) => {
           return(
-            <SwiperSlide className={styles.swiperSlide} key={index} > 
+            <SwiperSlide className={styles.swiper__slide} key={index} > 
             <Link to={item.ur} className={styles.link} >
-                <div className={styles.contCartas}>
-                    <div className={styles.cabeza}>
-                        <img src={item.imagen} className={styles.imagen}/>
-                        <span className={styles.titulos}>{item.titulo}</span>
+                <div className={styles.card__container}>
+                    <div className={styles.header}>
+                        <img src={item.image} className={styles.image}/>
+                        <span className={styles.titles}>{item.title}</span>
                     </div>
-                    <Card className={styles.Cartas}>
+                    <Card className={styles.sub__card__container}>
                       <Card.Body>                                    
-                        <Card.Title className={styles.espacio} href={item.url}>{item.espacio}</Card.Title>
+                        <Card.Title className={styles.room} href={item.url}>{item.room}</Card.Title>
                           <Card.Text className={styles.text}>{item.text}
                           </Card.Text>
                       </Card.Body>
@@ -94,7 +94,7 @@ export default function OurServices() {
         })}
         
       </Swiper>
-      <div className={styles.botonCont}>
+      <div className={styles.btn__container}>
         <Button data-animation="diagonal" className={Styles.Boton} href="/contact-us" > {'<Contac Us>'}
           <span className={Styles.borderTop} id="border"></span>
           <span className={Styles.borderRight} id="border"></span>

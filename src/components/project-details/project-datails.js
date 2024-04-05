@@ -1,11 +1,10 @@
 import styles from './../../components/projects.module.css'
-// import Styles from './kitchen.module.css'
-import I1 from './../../imagenes/bath2/IMG_2069.jpg'
-import Carrusel from './carrousel'
+
 import { useEffect, useState } from 'react';
 import { getProjectsByID } from '../../api/projects-api';
 
 import { useParams } from 'react-router-dom';
+import Carousel__Container from './mySwiper';
 
 export default function ProjectDetails(){
 
@@ -25,19 +24,19 @@ export default function ProjectDetails(){
     }, [id])
 
     return projectInfo? (
-        <div className={styles.mainContainer}>
-            <div className={styles.imagen__conteneder}>
-                <img className={styles.imagen__cocina} src={projectInfo.imagen_principal}/>
-                <div className={styles.right__conteneder}>
+        <div className={styles.main__container}>
+            <div className={styles.image__container}>
+                <img className={styles.room__image} src={projectInfo.imagen_principal}/>
+                <div className={styles.right__container}>
                 
-                    <div className={styles.imagenes__carrusel}>
-                        <Carrusel images={projectInfo.images}/>
+                    <div className={styles.image__swiper}>
+                        <Carousel__Container images={projectInfo.images}/>
                     </div>
                 </div>
             </div>
             
-            <div className={styles.letras__conteneder}>
-                    <p className={styles.texto}>
+            <div className={styles.letters__container}>
+                    <p className={styles.text}>
                     {projectInfo.description}
                     </p>
                 </div>

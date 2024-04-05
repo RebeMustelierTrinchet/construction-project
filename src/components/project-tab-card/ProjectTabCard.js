@@ -8,16 +8,16 @@ import { Link } from "react-router-dom"
 
 export default function PorjectTabCard({ items }) {
     return (
-        <div className={styles.mainCont}>
-            <div className={styles.imagenesCont}>
+        <div className={styles.main__container}>
+            <div className={styles.image__conteiner}>
                 {items.map((item, index) => {
                     return (
-                        <div key={index} className={styles.imagenes}>
+                        <div key={index} className={styles.image}>
                             <Link to={`/project-details/${item.id}`} className={styles.link}>
-                                <img className={styles.imagen__cocina} src={item.imagen_principal} />
+                                <img className={styles.room__image} src={item.imagen_principal} />
                             </Link>
-                            <div className={styles.nombre}>
-                                <h2 className={styles.texto}>{'< Go see our project >'}</h2>
+                            <div className={styles.name__conteiner}>
+                                <h2 className={styles.text}>{'< Go see our project >'}</h2>
                             </div>
                         </div>
                     );

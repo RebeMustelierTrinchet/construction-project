@@ -29,7 +29,7 @@ body {
   padding-bottom: 50px;
 }
 
-.swiperSlide {
+.swiper__slide {
   background-position: center;
   background-color: rgba(0, 0, 0, 0.658);
   border: 2px solid #FEDB97;
@@ -43,7 +43,7 @@ body {
   /* transition: 15s ease-in-out;  */
 }
 
-.imagen{
+.image{
     display: block;
     position: relative;
     z-index: 1;
@@ -56,15 +56,9 @@ body {
 }
 
 
-/* cartas */
 
-/* img{
-    display: block;
-    position: relative;
-    transition: all 0.2s linear;
-} */
 
-.titulos{
+.titles{
     font-size: x-small;
     text-transform: capitalize;
     /* color: white; */
@@ -84,7 +78,7 @@ body {
     
 }
 
-.Cartas{
+.sub__card__container{
     background-color: rgba(163, 163, 163, 0.937) !important;
     font-size: medium;
     /* margin-top: 30px; */
@@ -100,7 +94,7 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-.espacio{
+.room{
     text-transform: uppercase;
     color: #FEDB97 !important;
     font-family: Georgia, serif;
@@ -113,7 +107,7 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.cabeza{
+.header{
     /* display: none; */
     /* transition: 15s ease-in-out; 
     background-color: #d31111; */
@@ -124,28 +118,28 @@ body {
 
 }
 
-.swiperSlide:hover img{
+.swiper__slide:hover img{
     transform: scale(1.1);
     opacity: 0.50 !important;
 }
 
-.swiperSlide:hover .Cartas{ 
+.swiper__slide:hover .sub__card__container{ 
 	opacity: 1 !important;
 }
 
-.swiperSlide:hover .espacio,
-.swiperSlide:hover .boton,
-.swiperSlide:hover .text{
+.swiper__slide:hover .room,
+.swiper__slide:hover .boton,
+.swiper__slide:hover .text{
     opacity: 1.5 !important;
     transform: translateY(-250px);
     transition-delay: 0.1s;
 }
 
-.swiperSlide:hover .text .espacio{
+.swiper__slide:hover .text .room{
     opacity: 2.5 !important;
 }
 
-.botonCont{
+.btn__container{
     width: 130px;
     height: 30px;
     display: flex;

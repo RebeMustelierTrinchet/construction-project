@@ -1,12 +1,14 @@
 import { Button } from 'react-bootstrap'
 import styles from './latestProject.module.css'
 
-import Styles from './../../components/transiciones.module.css'
-import { getProjects } from '../../api/projects-api'
+import Styles from './../transiciones.module.css'
+import { getProjects } from './../../api/projects-api'
+
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux"
-import { getProjectsReducer } from "../../redux/slices/project-slices"
+import { getProjectsReducer} from './../../redux/slices/project-slices'
+
 
 export default function LatestProject() {
 
@@ -35,29 +37,29 @@ export default function LatestProject() {
     }, [projectFromRedux])
 
     return (
-        <div className={styles.mainCont}>
-            <h1 className={styles.titulo}>{'< Our Projects >'}</h1>
-            <h2 className={styles.subTitulo}>Favorites Projects</h2>
+        <div className={styles.main__container}>
+            <h1 className={styles.title}>{'< Our Projects >'}</h1>
+            <h2 className={styles.subtitle}>Favorites Projects</h2>
             <div>
                 {projects && projects.length ?
-                    <div className={styles.cont__imagen}>
+                    <div className={styles.image__container}>
                         {projects.map((project, index) => {
                             return (
-                                <div key={index} className={styles.sub__cont__imagen}>
+                                <div key={index} className={styles.sub__image__container}>
                                     
-                                    <Link to={`/project-details/${project.id}`}><img className={styles.imagen} src={project.imagen_principal ?? ""} /></Link>
-                                    <div className={styles.cont__text}><h2 className={styles.imagen__text} > {'< Click to see full project >'}</h2></div>
+                                    <Link to={`/project-details/${project.id}`}><img className={styles.image} src={project. imagen_principal ?? ""} /></Link>
+                                    <div className={styles.text__container}><h2 className={styles.image__text} > {'< Click to see full project >'}</h2></div>
                                 </div>
                             );
                         })}
                     </div>
 
-                    : <div>En Proceso</div>
+                    : <div>In Process</div>
 
                 }
             </div>
-            <div className={styles.botonCont}>
-                <Button data-animation="diagonal" className={Styles.Boton} href="/portfolio"> {'<Portafolio>'}
+            <div className={styles.btn__container}>
+                <Button data-animation="diagonal" className={Styles.Boton} href="/portfolio"> {'<Portfolio>'}
                     <span className={Styles.borderTop} id="border"></span>
                     <span className={Styles.borderRight} id="border"></span>
                     <span className={Styles.borderBottom} id="border"></span>

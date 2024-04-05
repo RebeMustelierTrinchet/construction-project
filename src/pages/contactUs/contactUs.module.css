@@ -1,4 +1,4 @@
-td {
+/* td {
     padding: 0px 10px;
 }
 
@@ -10,20 +10,20 @@ table{
     border-style: solid;
     border-color: white;
     color: white;
-}
+} */
 
-.bookOnlineDiv{
+.contact__us__container{
     margin-bottom: 100px;
 }
 
-.bookOnlineDivWrapper{
+.sub__contact__us__container{
     width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .forms,
-.formsM{
+.forms__message{
     width: 750px;
     display: flex;
     margin-left: auto;
@@ -32,11 +32,11 @@ table{
     border-color: black;
 }
 
-.formsM{
+.forms__message{
     height: 200px;
 }
 
-.formsLabel{
+.forms__label{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -49,31 +49,31 @@ table{
 
 
 
-.formsDiv{
+/* .formsDiv{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 750px;
     justify-content: space-between;
-}
+} */
 
-.formsTimeDiv{
+/* .formsTimeDiv{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
-}
+} */
 
-.formsItem{
+/* .formsItem{
     width: 200px;
     height: 40px;
     border-width: 2px;
     border-color: black;
-}
+} */
 
-.formsSubDiv{
+/* .formsSubDiv{
     height: 40px;
-}
-
+} */
+/* 
 .formsItem1{
     width: 80%;
     height: 40px;
@@ -82,9 +82,9 @@ table{
     border-color: black;
     border-radius: 10px;
 
-}
+} */
 
-.alerta{
+.alert{
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -92,7 +92,7 @@ table{
     background-color: rgba(238, 248, 208, 0.977);
 }
 
-.alertText{
+.alert__Text{
     font-size: 17px;
 }
 
@@ -105,29 +105,29 @@ table{
     color: #FEDB97;
 }
 
-.contButton{
+.btn__conteiner{
     display: flex;
     margin-top: 10px;
 }
 
 
 @media all and (max-width: 700px){
-    .bookOnlineDiv{
+    .contact__us__container{
         width:100% !important;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .table, .bookOnlineDivWrapper{
+    .sub__contact__us__container{
         margin-left: auto;
         margin-right: auto;
     }
 
-    .bookOnlineDivWrapper, .forms, .formsM, .formsDiv{
+    .sub__contact__us__container, .forms, .forms__message{
         width: 350px;
     }
     
-    .formsDiv{
+    /* .formsDiv{
         flex-direction: column !important;
     }
     .formsItem1{
@@ -139,13 +139,13 @@ table{
     }
     .formsText1{
         margin-left: -130px;
-    }
+    } */
 
     .title{
         padding-top: 30px;
     }
 
-    .contButton{
+    .btn__conteiner{
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
@@ -158,7 +158,7 @@ table{
         width: 150px;
         font-size: 1.5rem !important;
     }
-    .bookOnlineDiv{
+    .contact__us__container{
         margin-bottom: -20px !important;
     }
 }

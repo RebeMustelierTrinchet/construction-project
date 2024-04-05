@@ -1,12 +1,12 @@
-.mainCont{
+.main__Container{
     background-color: rgba(114, 114, 114, 0.778);
     padding: 40px;
     display: flex;
 }
-
+/* 
 .contText{
     width: 20%;
-}
+} */
 
 .text{
     color:white;
@@ -15,24 +15,23 @@
     margin-left: 10px;
 }
 
-.littleCont{
+.btn__container{
     width: 35%;
     margin-left: 20px;
     text-align: center;
 }
-
-.ContBoton,
-.contBoton{
+.Sub__Btn__Container,
+.sub__btn__container{
     display: flex;
     text-align: center !important;
     justify-content: center;
 }
 
-.ContBoton{
+.Sub__Btn__Container{
     justify-content: start !important;
 }
 
-.boton{
+.btn__social__media{
     width: 45px;
     height: 45px;
     font-size:large;
@@ -47,15 +46,15 @@
     display: flex;
 }
 
-.button__iconos{
+.button__icon{
     /* color: #FEDB97; */
     margin: auto;
     font-size: larger;
 }
 
 
-.Boton,
-.botonNav{
+.btn__contact,
+.btn__navigation{
     background-color: #FEDB97 !important;
     border: 3px solid #FEDB97 !important;
     transition: 0.8s !important;
@@ -64,38 +63,38 @@
 
 }
 
-.botonNav{
+.btn__navigation{
     margin-left: 15px;
     margin-bottom: 7px;
 }
 
-.Boton:hover,
-.botonNav:hover{
+.btn__contact:hover,
+.btn__navigation:hover{
     background-color: transparent !important;
     color: #FEDB97 !important;
     border: 3px solid #FEDB97;
 
 }
 
-.contUs{
+.contact__us__container{
     display: flex;
     flex-direction: column;
     text-align: left;
     margin: 10px;
 }
 
-.texto{
+.text__contact{
     color:white;
     font-size: large;
 }
 
-.boton:hover{
+.btn__social__media:hover{
     background-color: #FEDB97;
     color: white;
     border: 3px solid #FEDB97;
 }
 
-.iconos{
+.icons{
     color: #FEDB97;
     font-size: x-large;
     margin-right: 10px;
@@ -105,7 +104,7 @@
     padding-left: 5px;
 }
 
-.contenedor__imagen__icono{
+.image__icon__container{
     background-color: white;
     width: 113px;
     height: 112px;
@@ -118,30 +117,30 @@
     transition: 1s;
 }
 
-.contenedor__imagen__icono:hover,
-.imagen__icono:hover .contenedor__imagen__icono{
+.image__icon__container:hover,
+.image__icon:hover .image__icon__container{
     background-color: #FEDB97;
     cursor: pointer;
 }
 
-.imagen__icono{
+.image__icon{
     width: 110px;
     height: 110px;
 }
 
 @media all and (max-width: 700px){
-    .mainCont{
+    .main__Container{
         flex-direction: column;
         padding: 12px;
         margin-top: 20px;
     }
 
-    .contText,.text, .littleCont{
+    .contText,.text, .btn__container{
         width: 100%;
         margin-left: 0;
     }
 
-    .contenedor__imagen__icono{
+    .image__icon__container{
         /* width: max-content; */
         margin-left: auto;
         margin-right: auto;
@@ -155,33 +154,33 @@
         text-align: justify;
     }
 
-    .ContBoton{
+    .Sub__Btn__Container{
         flex-direction: column;
         width: 31%;
 
         margin-left: 32%;
 
     }
-    .botonCont{
+    .btn__container__contact{
         margin-bottom: 8px;
         width: 100%;
         justify-content: start;
         
     }
 
-    .botonNav{
+    .btn__navigation{
         width: 100% !important;
     }
-    .Boton{
+    .btn__contact{
         width: 31%;
         margin-left: 10px !important;
     }
-    .texto{
+    .text__contact{
         display: flex;
         flex-direction: row;
     }
 
-    .contUs{
+    .contact__us__container{
         width: max-content;
         margin-left: auto;
         margin-right: auto;

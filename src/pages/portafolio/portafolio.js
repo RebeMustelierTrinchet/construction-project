@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from './portafolio.module.css'
 import Styles from './../../components/transiciones.module.css'
-import Carrusel from "../../components/corrousel/carrousel";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import { Navbar } from "react-bootstrap";
-import stilos from './../../components/navBar/navBar.module.css'
+// import Carrusel from "../../components/corrousel/carrousel";
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import { Navbar } from "react-bootstrap";
 import NavPortafolio from "./navPortafolio";
 import Comments from "../../components/comments/comments";
 // import Styles from "../../components/transiciones.module.css"
@@ -14,6 +13,7 @@ import { useSelector, useDispatch } from "react-redux"
 import { getProjectsReducer } from "../../redux/slices/project-slices"
 
 import Button from 'react-bootstrap/Button';
+import Carousel__Container from "../../components/carousel/carousel";
 
 export default function Portafolio() {
 
@@ -65,13 +65,13 @@ export default function Portafolio() {
     }, [projects])
 
     return (
-        <div className={styles.mainCont}>
-            <Carrusel />
-            <div className={Styles.letras}>
-                <h1 className={Styles.titulo}>{'Click to view full Project'}</h1>
-                <h2 className={Styles.subTitulo}>Home renovations Photos:</h2>
+        <div className={styles.main__conteiner}>
+            <Carousel__Container />
+            <div className={Styles.letters}>
+                <h1 className={Styles.title}>{'Click to view full Project'}</h1>
+                <h2 className={Styles.subtitle}>Home renovations Photos:</h2>
             </div>
-            <div className={styles.contNav}>
+            <div className={styles.nav__contenier}>
                 <NavPortafolio categories={categories} />
                 <Button variant="outline-light" data-animation="diagonal" href="/services" className={Styles.Boton}>Go Services
                     <span className={Styles.borderTop} id="border"></span>
@@ -80,7 +80,7 @@ export default function Portafolio() {
                     <span className={Styles.borderLeft} id="border"></span>
                 </Button>
             </div>
-            <div className={styles.contPort}>
+            <div className={styles.comment__conteiner}>
                 <Comments />
             </div>
 

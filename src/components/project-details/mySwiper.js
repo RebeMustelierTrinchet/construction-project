@@ -1,7 +1,7 @@
 // import React from "react";
 // import styles from '../../../../../components/projects.module.css'
 // import Styles from './../../components/transiciones.module.css'
-// import Carrusel from "../../components/corrousel/carrousel";
+// import Carousel__Container from "../../components/corrousel/carrousel";
 // import Container from 'react-bootstrap/Container';
 // import Nav from 'react-bootstrap/Nav';
 // import { Navbar } from "react-bootstrap";
@@ -16,11 +16,11 @@ import { FaKitchenSet } from "react-icons/fa6";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa";
 
-// import I1 from './../../../imagenes/bath2/IMG_1150.jpg'
-// import I2 from './../../../imagenes/bath2/IMG_1151.jpg'
-// import I3 from './../../../imagenes/bath2/IMG_1840.jpg'
-// import I4 from './../../../imagenes/bath2/IMG_2069.jpg'
-// import I7 from './../../../imagenes/bath1/IMG_0010 - Copy.jpg'
+// import I1 from './../../../imagees/bath2/IMG_1150.jpg'
+// import I2 from './../../../imagees/bath2/IMG_1151.jpg'
+// import I3 from './../../../imagees/bath2/IMG_1840.jpg'
+// import I4 from './../../../imagees/bath2/IMG_2069.jpg'
+// import I7 from './../../../imagees/bath1/IMG_0010 - Copy.jpg'
 
 // otro nav
 import Col from 'react-bootstrap/Col';
@@ -44,19 +44,19 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 // const Images=[
 //     {
-//       imagen:I1,
+//       image:I1,
 //       evento:"Img1"
 //     },
 //     {
-//       imagen:I2,
+//       image:I2,
 //       evento:"Img2"
 //     },
 //     {
-//       imagen:I3,
+//       image:I3,
 //       evento:"Img3"
 //     },
 //     {
-//       imagen:I4,
+//       image:I4,
 //       evento:"Img4"
 //     },
     
@@ -68,7 +68,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 
 
-export default function Carrusel({images}){
+export default function Carousel__Container({images}){
     return (
        
 
@@ -78,10 +78,10 @@ export default function Carrusel({images}){
         <Row>
 
         <Row sm={9}>
-            <Tab.Content className={styles.imagen__content}>
-              {images.map((imagen,index) => {
+            <Tab.Content className={styles.image__container}>
+              {images.map((image,index) => {
                 return(
-                  <Tab.Pane eventKey={index}> <img className={styles.Tab__imagen} src={imagen.imagen} />   </Tab.Pane>
+                  <Tab.Pane eventKey={index}> <img className={styles.Tab__image} src={image.image} />   </Tab.Pane>
                 );
               })}
 
@@ -103,14 +103,14 @@ export default function Carrusel({images}){
                 className={styles.mySwiper}
             >
 
-            <Nav variant="pills" className={styles.flexRow}>
+            <Nav variant="pills" className={styles.flex__row}>
 
-            {images.map((imagen,index) => {
+            {images.map((image,index) => {
             return(
-                <SwiperSlide className={styles.SwiperSlide}>
+                <SwiperSlide className={styles.Swiper__Slide}>
                     <Nav.Item>
-                    <Nav.Link className={styles.navItem} eventKey={index}>
-                        <img className={styles.nav__imagen} src={imagen.imagen} />    
+                    <Nav.Link className={styles.nav__Item} eventKey={index}>
+                        <img className={styles.nav__image} src={image.image} />    
                     </Nav.Link> 
                     </Nav.Item>
                 </SwiperSlide>

@@ -1,4 +1,4 @@
-.letras{
+.letters{
     z-index:1;
     background-color: transparent;
     align-items: center;
@@ -9,31 +9,30 @@
     
 }
 
-.titulo{
+.title{
     text-transform: uppercase;
     color: #FEDB97;
 }
 
-.texto{
+.text{
     color:white;
     font-family: Copperplate;
     margin-bottom: 40px;
 }
 
 
-.contPreguntas{
+.questions__container{
     display: flex;
     /* background-color: aqua; */
     /* height: 100%; */
 
 }
-
-.contAccordion{
+.accordion__container{
     width: 97%;
     /* background-color: aqua !important; */
 }
 
-.preguntas{
+.questions{
     /* background-color: blue; */
     width: 80%;
     margin-left: 10%;
@@ -41,12 +40,12 @@
 }
 
 
-.accordionItem{
+.accordion__Item{
     background-color: transparent !important;
     color: white !important;
 }
 
-.accordionItemHeader{
+.accordion__Item__Header{
     background-color: transparent !important;
     
 }

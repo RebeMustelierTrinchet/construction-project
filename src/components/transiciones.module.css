@@ -126,17 +126,17 @@ transition-delay: 0s;
 
 }
 
-/* letras */
-/* <div className={styles.letras}>
-                <h1 className={styles.titulo}>{'< What we do >'}</h1>
-                <h2 className={styles.subTitulo}>Home renovations:</h2>
+/* letters */
+/* <div className={styles.letters}>
+                <h1 className={styles.title}>{'< What we do >'}</h1>
+                <h2 className={styles.subtitle}>Home renovations:</h2>
                 <p className={styles.texto}> Transform your space with renovations.
                     Update your kitchen, bathroom, or living room. Personalize your 
                     home according to your tastes and needs. Whether it's small changes 
                     or a complete renovation, create the home of your dreams.</p>
             </div> */
 
-.letras{
+.letters{
     background-color: rgba(100, 100, 100, 0.085);
     display: flex;
     width: 100%;
@@ -151,7 +151,7 @@ transition-delay: 0s;
 
 
 
-.titulo{
+.title{
     text-transform: uppercase;
     color: #FEDB97;
     font-family: Georgia, serif;
@@ -159,13 +159,13 @@ transition-delay: 0s;
     margin-top: 15px;
 }
 
-.subTitulo{
+.subtitle{
     text-transform: uppercase;
     font-family: Georgia, serif;
     font-size:large;
 }
 
-.texto{
+.text{
     color:white;
 }
 

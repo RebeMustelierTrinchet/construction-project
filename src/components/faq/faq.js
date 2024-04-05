@@ -34,17 +34,17 @@ const ITEMS = [
 export default function Faq(){
     return(
         <div>
-            <div className={styles.letras}>
-                <p className={styles.titulo}>{'< F.A.Q >'} </p>
-                <h2 className={styles.texto}>Frequently Asked Questions</h2>
+            <div className={styles.letters}>
+                <p className={styles.title}>{'< F.A.Q >'} </p>
+                <h2 className={styles.text}>Frequently Asked Questions</h2>
             </div>
-            <div className={styles.contPreguntas}>
-                <div className={styles.preguntas}>
-                    <Accordion defaultActiveKey="0" className={styles.contAccordion}>
+            <div className={styles.questions__container}>
+                <div className={styles.questions}>
+                    <Accordion defaultActiveKey="0" className={styles.accordion__container}>
                         {ITEMS.map((item, itemIndex) => {
                         return (
-                            <Accordion.Item className={styles.accordionItem} eventKey={(itemIndex+1).toString()}>
-                            <Accordion.Header className={styles.accordionItemHeader}>{item.title ?? ""}</Accordion.Header>
+                            <Accordion.Item className={styles.accordion__Item} eventKey={(itemIndex+1).toString()}>
+                            <Accordion.Header className={styles.accordion__Item__Header}>{item.title ?? ""}</Accordion.Header>
                             <Accordion.Body>
                                 {item.body ?? ""}
                             </Accordion.Body>

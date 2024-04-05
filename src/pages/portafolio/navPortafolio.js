@@ -1,14 +1,14 @@
 import React from "react";
 import styles from './portafolio.module.css'
 // import Styles from './../../components/transiciones.module.css'
-// import Carrusel from "../../components/corrousel/carrousel";
+// import Carousel__Container from "../../components/corrousel/carrousel";
 // import Container from 'react-bootstrap/Container';
 // import Nav from 'react-bootstrap/Nav';
 // import { Navbar } from "react-bootstrap";
 // import stilos from './../../components/navBar/navBar.module.css'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import ProjectTabCard from "../project-tab-card/ProjectTabCard";
+import ProjectTabCard from "./../../components/project-tab-card/ProjectTabCard";
 import "../../index.css"
 
 import { GiSofa } from "react-icons/gi";
@@ -21,7 +21,6 @@ import { FaQuestion } from "react-icons/fa";
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
-import Others from "../../components/others/others";
 
 
 const ICON_CATEGORY = {
@@ -37,13 +36,13 @@ export default function NavPortafolio({categories}){
         <Tab.Container id="left-tabs-example" defaultActiveKey="KITCHEN" className={styles.nav}>
         <Row>
           <Row sm={9}>
-            <Nav variant="pills" className={styles.flexRow}>
+            <Nav variant="pills" className={styles.flex__row}>
               
 
               {categories.map((cat, index) => {
                 return (
                 <Nav.Item>
-                <Nav.Link key={index} className={styles.navItem} eventKey={cat.name}><span className={styles.buton__nav}> {cat.name} </span>  {ICON_CATEGORY[cat.name]}</Nav.Link>
+                <Nav.Link key={index} className={styles.nav__item} eventKey={cat.name}><span className={styles.buton__nav}> {cat.name} </span>  {ICON_CATEGORY[cat.name]}</Nav.Link>
               </Nav.Item>
               );
               })}
@@ -51,7 +50,7 @@ export default function NavPortafolio({categories}){
           </Row>
           {/* <hr/> */}
           <Row sm={9}>
-            <Tab.Content className={styles.tabItem}>
+            <Tab.Content className={styles.tab__item}>
             {categories.map((cat, index) => {
               return (
                 <Tab.Pane key={index} className={styles.Item} eventKey={cat.name}><ProjectTabCard items={cat.items} /></Tab.Pane>

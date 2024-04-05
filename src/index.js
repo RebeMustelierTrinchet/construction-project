@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Portafolio from './pages/portafolio/portafolio.js';
 import ContService from './pages/ContService/ContService.js';
 import ContacUs from './pages/contactUs/contactUs.js';
-import ProjectDetails from './pages/project-details/project-datails.js';
+import ProjectDetails from './components/project-details/project-datails.js';
 
 import { store } from "./redux/store";
 import { Provider } from "react-redux";

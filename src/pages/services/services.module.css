@@ -1,5 +1,5 @@
 
-.mainCont{
+.main__conteiner{
     
     /* background-color: aqua; */
     display: flex;
@@ -11,7 +11,7 @@
     width: 90%;
     overflow: hidden;
 }
-.letras{
+.letters{
     background-color: rgba(100, 100, 100, 0.085);
     display: flex;
     width: 500px;
@@ -26,7 +26,7 @@
 
 
 
-.titulo{
+.title{
     text-transform: uppercase;
     color: #FEDB97;
     font-family: Georgia, serif;
@@ -34,13 +34,13 @@
     margin-top: 15px;
 }
 
-.subTitulo{
+.subtitle{
     text-transform: uppercase;
     font-family: Georgia, serif;
     font-size:large;
 }
 
-.texto{
+.text{
     color:white;
     
 }
@@ -54,21 +54,9 @@
     flex-direction: row;
 } */
 
-.Cartas{
-    /* margin: 20px; */
-    width: 300px;
-    background-color: transparent;
-    color: white;
-    /* border: 2px solid black; */
-    padding: 10px;
-}
-hr{
-    border: 1px solid black;
-    opacity: 1 !important;
-    color: black;
-}
 
-.titulos{
+
+.titles{
     font-size: x-small;
     text-transform: capitalize;
     color: white;
@@ -77,30 +65,13 @@ hr{
 
 }
 
-.imagen{
-    /* background-color: aqua; */
-    width: 600px;
-    height: 600px;
-}
-
-.contCartas{
-    margin: 20px;
-    width: 500px;
-    background-color: rgba(100, 100, 100, 0.085);
-    color: white;
-    display: grid;
-    grid-auto-rows:auto;
-    display: table;
-    border: 2px solid black;
-    padding: 10px;
-}
 
 @media all and (max-width: 700px){
-    .letras{
+    .letters{
         width: 100%;
         background-color: transparent;
     }
-    .texto{
+    .text{
         display: none;
     }
 }

@@ -42,18 +42,18 @@ export default function ContacUs() {
 
 
     return (
-        <div className={styles.bookOnlineDiv}>
-            <div className={styles.bookOnlineDivWrapper}>
+        <div className={styles.contact__us__container}>
+            <div className={styles.sub__contact__us__container}>
 
                 {showAlert ?
-                    <Alert variant="success" onClose={() => setShowAlert(false)} dismissible className={styles.alerta}>
-                        <h1 className={styles.alertText}> Your menssage has been sent </h1>
+                    <Alert variant="success" onClose={() => setShowAlert(false)} dismissible className={styles.alert}>
+                        <h1 className={styles.alert__Text}> Your menssage has been sent </h1>
                     </Alert> : <></>
                 }
 
                 <h1 className={styles.title}>{'< Contact Us >'}</h1>
 
-                <Form.Label htmlFor="inputCustumer" className={styles.formsLabel}>Name</Form.Label>
+                <Form.Label htmlFor="inputCustumer" className={styles.forms__label}>Name</Form.Label>
                 <Form.Control className={styles.forms}
                     type="text"
                     id="inputCustumer"
@@ -62,7 +62,7 @@ export default function ContacUs() {
                     onChange={(e) => { setCustomer(e.target.value) }}
                 />
 
-                <Form.Label htmlFor="inputPhone" className={styles.formsLabel}>Phone</Form.Label>
+                <Form.Label htmlFor="inputPhone" className={styles.forms__label}>Phone</Form.Label>
                 <Form.Control
                     className={styles.forms}
                     type="text"
@@ -73,7 +73,7 @@ export default function ContacUs() {
                 />
 
                 
-                <Form.Label htmlFor="inputEmail" className={styles.formsLabel}>Email</Form.Label>
+                <Form.Label htmlFor="inputEmail" className={styles.forms__label}>Email</Form.Label>
                 <Form.Control className={styles.forms}
                     type="text"
                     id="inputEmail"
@@ -81,8 +81,8 @@ export default function ContacUs() {
                     value={email}
                     onChange={(e) => { setemail(e.target.value) }}
                 />
-                <Form.Label htmlFor="inputMessage" className={styles.formsLabel}>Message</Form.Label>
-                <Form.Control className={styles.formsM}
+                <Form.Label htmlFor="inputMessage" className={styles.forms__label}>Message</Form.Label>
+                <Form.Control className={styles.forms__message}
                     type="text"
                     id="inputMessage"
                     aria-describedby="inputMessage"
@@ -90,7 +90,7 @@ export default function ContacUs() {
                     onChange={(e) => { setmessage(e.target.value) }}
                 />
                 
-                <div className={styles.contButton}>
+                <div className={styles.btn__conteiner}>
                     <Button variant="outline-light" onClick={(e) => onSubmit(e)} data-animation="diagonal" className={`${Styles.Boton} ${styles.button__submit}`}>{ '< Submit >'}
                         <span className={Styles.borderTop} id="border"></span>
                         <span className={Styles.borderRight} id="border"></span>
