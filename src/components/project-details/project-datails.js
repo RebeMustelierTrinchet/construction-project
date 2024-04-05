@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { getProjectsByID } from '../../api/projects-api';
 
 import { useParams } from 'react-router-dom';
-import Carousel__Container from './mySwiper';
+import CarouselContainer from './mySwiper';
 
 export default function ProjectDetails(){
 
@@ -30,7 +30,7 @@ export default function ProjectDetails(){
                 <div className={styles.right__container}>
                 
                     <div className={styles.image__swiper}>
-                        <Carousel__Container images={projectInfo.images}/>
+                        <CarouselContainer images={projectInfo.images}/>
                     </div>
                 </div>
             </div>

@@ -68,7 +68,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 
 
-export default function Carousel__Container({images}){
+export default function CarouselContainer({images}){
     return (
        
 
