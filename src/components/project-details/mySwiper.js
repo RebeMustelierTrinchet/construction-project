@@ -73,6 +73,7 @@ export default function CarouselContainer({images}){
        
 
         <>
+        
        
         <Tab.Container id="left-tabs-example" defaultActiveKey="0" className={styles.nav}>
         <Row>
@@ -81,7 +82,7 @@ export default function CarouselContainer({images}){
             <Tab.Content className={styles.image__container}>
               {images.map((image,index) => {
                 return(
-                  <Tab.Pane eventKey={index}> <img className={styles.Tab__image} src={image.image} />   </Tab.Pane>
+                  <Tab.Pane eventKey={index}> <img className={styles.Tab__image} src={image.imagen} />   </Tab.Pane>
                 );
               })}
 
@@ -110,7 +111,8 @@ export default function CarouselContainer({images}){
                 <SwiperSlide className={styles.Swiper__Slide}>
                     <Nav.Item>
                     <Nav.Link className={styles.nav__Item} eventKey={index}>
-                        <img className={styles.nav__image} src={image.image} />    
+                        <img className={styles.nav__image} src={image.imagen} />
+                        
                     </Nav.Link> 
                     </Nav.Item>
                 </SwiperSlide>

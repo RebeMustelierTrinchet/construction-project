@@ -40,6 +40,7 @@ export default function ProjectDetails(){
                     {projectInfo.description}
                     </p>
                 </div>
+
             
         </div>
     ):<div>No project</div>
