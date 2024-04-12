@@ -1,12 +1,15 @@
 .room__image{
     width: 45%;
     object-fit: cover;
+    height: 100vh;
+    
 }
 
 .main__container{
     display: flex;
     flex-direction: column;
     padding: 30px;
+    /* height: 100vh; */
     
 }
 
@@ -19,6 +22,7 @@
 .right__container{
     height: 800px;
     margin-left: 40px;
+    width: 50%;
 }
 
 .text{
@@ -30,9 +34,19 @@
 .nav__image{
     width: 120px;
     height: 120px;
+    object-fit: cover;
     filter:grayscale(100%)
 }
 
+.nav__image:hover{
+  filter: initial;
+  cursor: pointer;
+  width: 145px;
+  height: 145px;
+  margin-top: -11px;
+  margin-left: -11px;
+  border: 2px solid var(--dorado);
+}
 
 
 .flex__row{
@@ -45,6 +59,7 @@
     margin-bottom: 40px;
     overflow:hidden;
     justify-content: center;
+    /* background-color: aqua; */
 }
 
 /*  */
@@ -81,8 +96,12 @@
 
   .Tab__image{
     object-fit: contain !important;
-    height: 550px;
-    width: 580px;
+    height: 70vh;
+    min-width: 580px;
+    /* height: auto; */
+    width: 95%;
+    display: flex;
+    margin: auto;
     
   }
 
@@ -92,8 +111,17 @@
     margin-bottom: 40px;
     overflow:hidden;
     justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    /* height: 70%; */
   }
 
+  .main__nav__conteiner{
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    height: 100vh;
+  }
   .nav__imagen:hover{
     filter: initial;
     position: absolute;
@@ -116,6 +144,7 @@
    @media all and (max-width: 700px){
     .image__container{
       flex-direction: column;
+      /* background-color: azure; */
     }
     .room__image{
       width: 100%;
@@ -124,25 +153,35 @@
       
     }
     .Tab__imagen{
+      width: 100%;
       height: auto;
-      width: 130%;
-      margin-left: -50px;
-      /* margin-bottom: 20px; */
+      margin: auto;
     }
     .nav__imagen{
       margin-top: -10px;
-      /* margin-left: 20px; */
-      /* position: relative !important; */
     }
     .big__image__container{
       height: auto;
+      width: 100%;
+      display: flex;
+      margin:auto;
     }
+
     .right__container{
       height: auto;
     }
-    .letters__container{
+    
+    .image__swiper,
+    .main__nav__conteiner,
+    .letters__container,
+    .right__container{
       width: 100%;
       margin-left: 0;
     }
-   
+    
+    .row{
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
    }

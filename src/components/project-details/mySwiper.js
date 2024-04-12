@@ -72,63 +72,63 @@ export default function CarouselContainer({images}){
     return (
        
 
-        <>
+      <div className={styles.main__nav__conteiner}>
         
        
         <Tab.Container id="left-tabs-example" defaultActiveKey="0" className={styles.nav}>
-        <Row>
+          <Row className={styles.row}>
 
-        <Row sm={9}>
-            <Tab.Content className={styles.image__container}>
-              {images.map((image,index) => {
-                return(
-                  <Tab.Pane eventKey={index}> <img className={styles.Tab__image} src={image.imagen} />   </Tab.Pane>
-                );
-              })}
+            <Row sm={9} className={styles.row}>
+              <Tab.Content className={styles.big__image__container}>
+                {images.map((image,index) => {
+                  return(
+                    <Tab.Pane eventKey={index}> <img className={styles.Tab__image} src={image.imagen} />   </Tab.Pane>
+                  );
+                })}
 
-            </Tab.Content>
-          </Row>
+              </Tab.Content>
+            </Row>
             
-          {/* <Row sm={19}> */}
-          <Swiper
-                
-                grabCursor={true}
-                slidesPerView={'auto'}
-                spaceBetween={45}
-                centeredSlides={true}
-                freeMode={true}
-                pagination={{
-                clickable: true
-                }}
-                modules={[FreeMode, Pagination]}
-                className={styles.mySwiper}
+            {/* <Row sm={19}> */}
+            <Swiper
+                  
+              grabCursor={true}
+              slidesPerView={'auto'}
+              spaceBetween={45}
+              centeredSlides={true}
+              freeMode={true}
+              pagination={{
+              clickable: true
+              }}
+              modules={[FreeMode, Pagination]}
+              className={styles.mySwiper}
             >
 
-            <Nav variant="pills" className={styles.flex__row}>
+              <Nav variant="pills" className={styles.flex__row}>
 
-            {images.map((image,index) => {
-            return(
-                <SwiperSlide className={styles.Swiper__Slide}>
-                    <Nav.Item>
-                    <Nav.Link className={styles.nav__Item} eventKey={index}>
-                        <img className={styles.nav__image} src={image.imagen} />
-                        
-                    </Nav.Link> 
-                    </Nav.Item>
-                </SwiperSlide>
-            );
-            })}
+              {images.map((image,index) => {
+              return(
+                  <SwiperSlide className={styles.Swiper__Slide}>
+                      <Nav.Item>
+                      <Nav.Link className={styles.nav__Item} eventKey={index}>
+                          <img className={styles.nav__image} src={image.imagen} />
+                          
+                      </Nav.Link> 
+                      </Nav.Item>
+                  </SwiperSlide>
+              );
+              })}
 
 
-            </Nav>
+              </Nav>
             </Swiper>
-          {/* </Row> */}
-         
-          {/* <hr/> */}
+            {/* </Row> */}
           
-        </Row>
+            {/* <hr/> */}
+          
+          </Row>
       </Tab.Container>
-      </>
+      </div>
       );
 }
 

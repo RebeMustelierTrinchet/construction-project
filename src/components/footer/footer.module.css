@@ -2,6 +2,9 @@
     background-color: rgba(114, 114, 114, 0.778);
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 /* 
 .contText{
@@ -12,13 +15,18 @@
     color:white;
     font-size: small;
     width: 20%;
+    min-width: 230px;
     margin-left: 10px;
+    margin-top: 20px;
 }
 
 .btn__container{
-    width: 35%;
+    width: 25%;
+    min-width: 300px;
     margin-left: 20px;
+    margin-top: 20px;
     text-align: center;
+    /* background-color: aqua; */
 }
 .Sub__Btn__Container,
 .sub__btn__container{
@@ -180,6 +188,9 @@
         flex-direction: row;
     }
 
+    .btn__container{
+        margin-top: 0;
+    }
     .contact__us__container{
         width: max-content;
         margin-left: auto;
