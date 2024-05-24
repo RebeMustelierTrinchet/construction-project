@@ -32,7 +32,7 @@ export default function OurServices() {
         room:"< Kitchen >",
         text: "We build the perfect Kitchen for you, fulfilling your dreams and expectations.",
         boton:"See Kitchen",
-        url:"/kitchen"
+        url:"/project-service/kitchen"
     },
     {
         image: ImgBath,
@@ -40,7 +40,7 @@ export default function OurServices() {
         room:"< Bathroom >",
         text: " No matter the size of your bathroom, we adapt to any space to create a relaxation oasis in your home.",
         boton:"See Bathroom",
-        url:"/Bathroom"
+        url:"/project-service/bathroom"
     },
     {
       image: outSideImg,
@@ -48,7 +48,7 @@ export default function OurServices() {
       room:"< Others >",
       text: " We renovate the small details of your home to give it a unique and personalized style.",
       boton:"See Others Projects",
-      url:"/OthersProjects"
+      url:"/project-service/varied_spaces"
   },
     
 ]
@@ -74,7 +74,7 @@ export default function OurServices() {
         {Cartas.map((item, index) => {
           return(
             <SwiperSlide className={styles.swiper__slide} key={index} > 
-            <Link to={item.ur} className={styles.link} >
+            <Link to={item.url} className={styles.link} >
                 <div className={styles.card__container}>
                     <div className={styles.header}>
                         <img src={item.image} className={styles.image}/>

@@ -14,6 +14,7 @@ table{
 
 .contact__us__container{
     margin-bottom: 100px;
+    min-width: 100vh;
 }
 
 .sub__contact__us__container{

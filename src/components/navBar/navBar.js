@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import icono from './../../imagenes/icono.png'
 import Dropdown from 'react-bootstrap/Dropdown';
+import { FaTiktok } from "react-icons/fa6";
 
 export default function NavBar(){
    return(
@@ -35,7 +36,7 @@ export default function NavBar(){
             
                         <Nav className={styles.btn__social__media__container}>
                         <Nav.Link className={styles.btn__social__media} href="https://www.facebook.com/Damarco.Tx?mibextid=LQQJ4d"><FaFacebookF className={styles.button__icons} /></Nav.Link>
-                        <Nav.Link className={styles.btn__social__media} href="/"><FaInstagram className={styles.button__icons} /></Nav.Link>
+                        <Nav.Link className={styles.btn__social__media} href="https://www.tiktok.com/@be.ayyash?lang=es"><FaTiktok className={styles.button__icons} /></Nav.Link>
                         <Nav.Link className={styles.btn__social__media} href="/"><FaTwitter className={styles.button__icons} /></Nav.Link>
                         <Nav.Link className={styles.btn__social__media} href="/"><CgMail className={styles.button__icons} /> </Nav.Link>
                         </Nav>

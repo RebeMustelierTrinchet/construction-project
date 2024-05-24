@@ -1,0 +1,98 @@
+.mySwiper {
+    width: 100%;
+    /* height: 700px; */
+    /* background-color: aqua; */
+    padding-top: 30px;
+    
+  }
+  
+  .swiper__slide{
+    background-color: rgba(11, 11, 11, 0.818);
+    padding: 10px;
+    width: 500px;
+    height: 800px;
+    border: 3px solid var(--dorado);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   /* background-color: black; */
+   position: relative;
+   transition: 1s;
+
+  }
+
+  .card__container{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 700px;
+    overflow: hidden;
+
+  }
+
+  .header{
+    width: 100%;
+    height: 65%;
+    position: relative;
+  }
+
+  .image{
+    min-width: 380px;
+    height: 100%;
+  }
+
+  .sub__card__container{
+    background-color: rgba(0, 0, 0, 0.666);
+    margin-top: 20px;
+  }
+
+  .title{
+    color: var(--dorado) !important;
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+
+  .icon{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+  }
+
+  .swiper__slide:hover{
+    cursor: pointer;
+   
+  }
+
+  .mySwiper:hover .swiper__slide:not(:hover){
+    background-color: black;
+    /* zoom: 0.95; */
+  }
+
+  .mySwiper:hover .swiper__slide:not(:hover)  .card__container{
+    opacity: 0.4;
+    zoom: 0.95;
+  }
+
+  .backgrond__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(118, 138, 138, 0.442);
+    transition: 1s;
+    opacity: 0;
+
+  }
+
+  .mySwiper:hover .swiper__slide:not(:hover)  .backgrond__container{
+    opacity: 1;
+  }
+
+  @media all and (max-width: 700px){
+    
+  }

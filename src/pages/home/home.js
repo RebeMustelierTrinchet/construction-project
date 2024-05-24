@@ -6,6 +6,7 @@ import I2 from './../../imagenes/I2.jpg'
 import Services from '../services/services';
 import Carousel__Container from '../../components/carousel/carousel';
 import LatestProject from '../../components/latestProject/latestProject';
+import Comments from '../../components/comments/comments';
 
 export default function Home(){
     return(
@@ -24,7 +25,7 @@ export default function Home(){
                     </Button>
                 </div>
                 <div className={styles.left__conteiner}>
-                <img className={styles.left__image} src={I1}></img>
+                    <img className={styles.left__image} alt={'Kitchen Renovation'} src={I1}></img>
                 </div>
                 <div className={styles.right__conteiner}>
                 {/* <img className={styles.imagenDerecha} src={I2}></img> */}
@@ -51,10 +52,10 @@ export default function Home(){
             <div>
                 <LatestProject />
             </div>
-            {/* <div>
-                { <Comments /> }
-                <Faq />
-            </div> */}
+            <div>
+                <Comments /> 
+                {/* <Faq /> */}
+            </div>
 
         </div>
     )

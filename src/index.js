@@ -15,6 +15,8 @@ import ProjectDetails from './components/project-details/project-datails.js';
 
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
+// import Bath__Projects from './pages/bath-projects/bath_projects.js';
+import Services__Projects from './pages/services-projects/services_projects.js';
 
 const rootElement = document.getElementById("root");
 render(
@@ -27,6 +29,7 @@ render(
           <Route exact path="/portfolio" element={<Portafolio />} />
           <Route exact path="/contact-us" element={<ContacUs />} />
           <Route exact path="/project-details/:id" element={<ProjectDetails />} />
+          <Route exact path="/project-service/:id" element={<Services__Projects />} />
         </Routes>
       </Layout>
     </Provider>

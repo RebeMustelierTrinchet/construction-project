@@ -1,0 +1,37 @@
+.letters{
+  width: 40%;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* margin-left: 50px; */
+  justify-content: center;
+  border: 3px solid var(--dorado);
+    padding: 0 20px ;
+    align-items: center;
+}
+
+.image__conteiner{
+    /* width: 50%; */
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid var(--dorado);
+    padding: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image{
+    height: 440px;  
+  display: flex;
+  position: relative;
+}
+
+.introduction__conteiner{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    
+
+}

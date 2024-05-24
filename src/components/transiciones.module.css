@@ -137,7 +137,7 @@ transition-delay: 0s;
             </div> */
 
 .letters{
-    background-color: rgba(100, 100, 100, 0.085);
+    background-color: rgba(75, 74, 74, 0.373);
     display: flex;
     width: 100%;
     flex-direction: column;
