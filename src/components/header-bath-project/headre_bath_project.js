@@ -48,9 +48,11 @@ export default function Header_Bath_Project({ item }) {
                     </h2>
                 </div>
             </div>
-            <div className={styles.image__conteiner}>    
+            {/* <div className={styles.image__conteiner}>    
                 <img src={item.image} alt={item.alt} className={styles.image} />
-            </div>
+            </div> */}
+
+            <img src={item.image} alt={item.alt} className={styles.image} />
         </div>
     )
 }

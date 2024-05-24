@@ -4,6 +4,7 @@
     opacity: 1.5 !important;
     position: relative;
     margin-top: 20px;
+    display: flex;
     
 }
 
@@ -70,6 +71,8 @@
     }
     .text{
         margin-left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
         /* text-align:start; */
     }
     .swiper__slide{
@@ -78,5 +81,8 @@
     .title{
         margin-top: 20px;
     }
-    
+    .comments__container{
+        width: 95%;
+        text-align: start;
+    }
 }

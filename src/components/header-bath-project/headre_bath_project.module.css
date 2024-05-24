@@ -3,15 +3,18 @@
     height: auto;
     min-height: 600px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     
-    padding: 10px;
+    /* padding: 10px; */
+    padding-right: 10px;
     position: relative;
     /* overflow-y: auto; */
     margin-bottom: 100px;
     /* background-color: aqua; */
     overflow: hidden;
     margin-top: 50px;
+    /* padding-bottom: -10px; */
     
 }
 .background {
@@ -60,7 +63,14 @@
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    /* position: relative; */
     position: relative;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: -40px;
+    margin-left: auto;
+    border: 20px solid black;
+    outline: 2px solid var(--dorado);
   }
 
 
@@ -73,8 +83,13 @@
       margin-left: 5%;
     }
 
-    .image__conteiner{
+    .image{
       width: 90%;
-      left: 5%;
+      margin-left: 5%;
+      /* margin-right: 5%; */
+    }
+
+    .main__conteiner{
+      padding: 0;
     }
   }
