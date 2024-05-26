@@ -22,6 +22,7 @@ import { Button } from 'react-bootstrap';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import {Link} from "react-router-dom"
+import Our__service__text from '../ourservice_text/ourServices_text';
 
 export default function OurServices() {
   const nombreNegocio= 'Damarco'
@@ -54,6 +55,8 @@ export default function OurServices() {
 ]
   return (
     <div className={styles.main__container}>
+
+      <Our__service__text/>
       
       <Swiper
         effect={'coverflow'}

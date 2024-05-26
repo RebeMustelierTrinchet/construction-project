@@ -219,15 +219,18 @@
     }
 
     .letters{
-      width: 76%;
+      width: 86%;
       background-color: rgba(100, 100, 100, 0.085);
-      padding: 30px;
+      padding: 5px;
       position: relative;
       text-align: center;
       /* justify-content: ; */
       /* height: 240px; */
       top: 20px;
-      left:12%
+      left:6%
+    }
+    .text{
+      font-size: 20px;
     }
    .Boton{
     position: relative;

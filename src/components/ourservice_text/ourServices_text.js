@@ -1,23 +1,18 @@
-import styles from './services.module.css'
+import styles from './ourServices_text.module.css'
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import OurServices from '../../components/ourServices/ourServices';
-import Faq from '../../components/faq/faq';
 import Styles from './../../components/transiciones.module.css'
-import Comments from '../../components/comments/comments';
-import Work__Process from '../../components/work-process/work_process';
 
 
 
 
 
-export default function Services(){
+export default function Our__service__text(){
 
     
     return(
         <div className={styles.main__conteiner}>
-            {/* <div className={styles.letters}>
+            <div className={styles.letters}>
                 <h1 className={styles.title}>{'< What we do >'}</h1>
                 <h2 className={styles.subtitle}>Home renovations:</h2>
                 <p className={styles.text}> Transform your space with renovations.
@@ -32,13 +27,8 @@ export default function Services(){
                         <span className={Styles.borderLeft} id="border"></span>
                         </Button>
                     </div>
-            </div> */}
-            <div className={styles.services}>
-                <OurServices/>
             </div>
            
-            <Work__Process/>
-            <Comments />
             
         </div>
     )

@@ -7,6 +7,7 @@ import Services from '../services/services';
 import Carousel__Container from '../../components/carousel/carousel';
 import LatestProject from '../../components/latestProject/latestProject';
 import Comments from '../../components/comments/comments';
+import OurServices from '../../components/ourServices/ourServices';
 
 export default function Home(){
     return(
@@ -47,7 +48,7 @@ export default function Home(){
             </div>
 
             <div>
-                <Services />
+                <OurServices />
             </div>
             <div>
                 <LatestProject />
