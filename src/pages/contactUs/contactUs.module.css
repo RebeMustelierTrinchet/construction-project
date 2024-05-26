@@ -112,20 +112,22 @@ table{
 }
 
 
-@media all and (max-width: 700px){
+@media all and (max-width: 750px){
     .contact__us__container{
-        width:100% !important;
-        margin-left: auto;
-        margin-right: auto;
+        min-width:95% !important;
+        /* background-color: rgb(222, 137, 34); */
     }
 
     .sub__contact__us__container{
         margin-left: auto;
+        width:95% !important;
         margin-right: auto;
     }
 
-    .sub__contact__us__container, .forms, .forms__message{
-        width: 350px;
+    .sub__contact__us__container, 
+    .forms, 
+    .forms__message{
+        width:100% !important;
     }
     
     /* .formsDiv{
@@ -161,5 +163,9 @@ table{
     }
     .contact__us__container{
         margin-bottom: -20px !important;
+    }
+
+    .forms__label{
+        width:100% !important;
     }
 }
