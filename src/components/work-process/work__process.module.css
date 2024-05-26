@@ -34,7 +34,7 @@
     width: 380px;
     /* height: 300px; */
     overflow: hidden;
-    background-color: black;
+    background-color: black !important;
 
   }
 
@@ -47,7 +47,7 @@
 
  
   .sub__card__container{
-    background-color: transparent;
+    background-color: transparent !important;
     margin-top: 20px;
   }
 
