@@ -12,8 +12,8 @@
 }
 
 @media all and (max-width: 700px){
-    .contenedor{
-        padding: 0px;
+    .conteiner{
+        padding: 10px;
     }
 
 }

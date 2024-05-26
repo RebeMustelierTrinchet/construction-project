@@ -26,7 +26,8 @@
 }
 
 /* bien */
-.contenedorCarousel__Container{
+.Carousel__Container{
+    position: relative;
     margin-top: 40px;
     margin-bottom: 45px;
     height: 100%;
@@ -49,6 +50,7 @@
     overflow: hidden !important;
     text-align: center;
     transition-duration: 1s;
+    position: relative;
 }
 
 .carousel__item__container{
@@ -95,6 +97,29 @@
     object-fit: cover;
     animation: zoom 30s infinite;
     
+}
+
+.text__container{
+    z-index: 10;
+    width: 75%;
+    position: absolute;
+    top:30%;
+    left: 12.5%;
+   
+
+}
+
+.title{
+    font-size: 18px;
+}
+
+.subtitle{
+    font-size: 20px;
+
+}
+
+.letters{
+    background-color: rgba(42, 41, 41, 0.644);
 }
 
 @keyframes zoom {
@@ -154,5 +179,15 @@
         width: 95%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .title{
+        font-size: 12px;
+    }
+    
+    .subtitle{
+        font-size: 14px;
+        /* text-transform:none; */
+    
     }
 }
